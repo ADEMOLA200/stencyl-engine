@@ -12,7 +12,7 @@
 			<block tag="if, else, else-if" />
 			
 			<!-- Booleans -->
-			<header title="@cat.flow.cond.bool" />
+			<header id="flow.conditions.booleans" title="@cat.flow.cond.bool" />
 			<block tag="and, or, not" />
 			<spacer />
 			<block tag="true, false" />
@@ -107,7 +107,7 @@
 			<block tag="exit-game" />
 			
 			<!-- Memory Management -->
-			<header title="@cat.flow.adv.mem" />
+			<header id="flow.advanced.mem" title="@cat.flow.adv.mem" />
 			<block tag="load-unload-atlas" />
 			<block tag="atlas-loaded" />
 			
@@ -743,7 +743,7 @@
 			<block tag="keycode" />
 			
 			<!-- Mouse / Touch -->
-			<header title="@cat.controls.mouse" />
+			<header id="user-input.keyboard-mouse.mouse-touch" title="@cat.controls.mouse" />
 			<label text="@cat.controls.mouse.i" />
 			
 			<block tag="mousestate" />
