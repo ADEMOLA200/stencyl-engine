@@ -618,19 +618,39 @@
 	<!-- Attributes -->
 	<category id="attributes" title="@cat.variables" color="blue">
 		
-		<!-- Getters -->
-		<section id="attributes.getters" title="@cat.variables.get">
+		<!-- Event -->
+		<section id="attributes.local" title="@cat.variables.local">
 
-			<button text="@sb.var.add" action="addVar" />
-			<blocklist source="attribute-getters" />
+			<block tag="initlocal" />
+			<blocklist source="local-attributes" />
 
 		</section>
 
-		<!-- Setters -->
-		<section id="attributes.setters" title="@cat.variables.set">
+		<!-- Behavior -->
+		<section id="attributes.behavior" title="@cat.variables.behavior">
 
 			<button text="@sb.var.add" action="addVar" />
-			<blocklist source="attribute-setters" />
+			<blocklist source="attributes" />
+
+		</section>
+
+		<!-- Game -->
+		<section id="attributes.game" title="@cat.variables.game">
+
+			<button text="@att.new" action="addGameVar" />
+			<button text="@att.show" action="settings:library.attributes" />
+
+			<!-- Dynamic Game Attributes -->
+			<header title="@att.getset" />
+			<block tag="get-game-att" />
+			<block tag="set-game-att" />
+
+			<!-- Game Attribute Operations -->
+			<header title="@att.ops" />
+			<block tag="set-game-att-save" />
+			<block tag="restore-game-attributes" />
+			
+			<blocklist source="game-attributes" />
 
 		</section>
 
@@ -707,46 +727,6 @@
 
 		</section>
 
-	</category>
-	
-	<!-- Game Attributes -->
-	<category id="game-attributes" title="@cat.variables.game" color="purple">
-
-		<section id="game-attributes.getters" title="@cat.variables.get">
-
-			<button text="@att.new" action="addGameVar" />
-			<button text="@att.show" action="settings:library.attributes" />
-
-			<!-- Dynamic Game Attributes -->
-			<header title="@att.getset" />
-			<block tag="get-game-att" />
-			
-			<blocklist source="game-attribute-getters" />
-
-		</section>
-		
-		<section id="game-attributes.setters" title="@cat.variables.set">
-
-			<button text="@att.new" action="addGameVar" />
-			<button text="@att.show" action="settings:library.attributes" />
-
-			<!-- Dynamic Game Attributes -->
-			<header title="@att.getset" />
-			<block tag="set-game-att" />
-			
-			<blocklist source="game-attribute-setters" />
-
-		</section>
-		
-		<section id="game-attributes.operations" title="@cat.variables.ops">
-
-			<!-- Game Attribute Operations -->
-			<header title="@att.ops" />
-			<block tag="set-game-att-save" />
-			<block tag="restore-game-attributes" />
-
-		</section>
-		
 	</category>
 	
 	<!-- User Input -->
