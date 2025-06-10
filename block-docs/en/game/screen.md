@@ -37,3 +37,7 @@ Use this block with the set / get scale mode blocks.
 # engine-scale -- Current Scale
 
 Returns the current [scale]($pedia/mobile-app-scaling/) of the game. Either 1, 1.5, 2, 3 or 4.
+
+# safe-area-insets -- Safe Area Insets
+
+The amount of space away from the given edge needed to avoid notches and system UI on the running mobile device.

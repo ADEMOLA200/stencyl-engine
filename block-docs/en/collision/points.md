@@ -12,3 +12,7 @@ Returns the text associated with the tile you collided with. Must be used within
 
 > **What is this for?** You can [tag tiles]($pedia/tiles/) with textual data that can be accessed during game. For example, a lava tile could convey that it's deadly to the touch, or a healing tile in an RPG could heal the character passing over it.  
 > ![tile-editor]($pedia/tiles-and-tilesets/tile-metadata.png)
+
+# tile-position-for-collision -- Get Position for Collided Tile
+
+Returns the column or row of the collided tile.

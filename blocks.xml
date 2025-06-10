@@ -5514,7 +5514,7 @@
            type="normal"
            returns="number"
            category="scene"
-           helpURL="game-screen">
+           helpURL="scene-view">
         <fields>
             <dropdown order="0" id="topBottomLeftRight" />
         </fields>
@@ -9948,7 +9948,8 @@
            spec="draw a shape: %0"
            type="wrapper"
            returns="void"
-           category="drawing">
+           category="drawing"
+           helpURL="drawing-main">
         <fields>
             <anything order="0" />
             <code-block order="1" />
@@ -9963,7 +9964,8 @@
            spec="new shape"
            type="normal"
            returns="anything"
-           category="drawing">
+           category="drawing"
+           helpURL="drawing-main">
         <fields/>
         <context>
             <requiredContext type="has" value="g:com.stencyl.graphics.G" />

@@ -57,3 +57,11 @@ ${blockCode([drawfill-poly 1])}
 # add-to-poly -- Add Point to Polygon
 
 Adds the specified point to the polygon. Must be used within the `draw a [oulined/filled] polygon` wrapper, and at least 3 points must be specified. You do not have to "close" the polygon by repeating the starting point.
+
+# new-shape -- Create a New Shape
+
+Creates a new, empty shape. When drawing an object that doesn't change every frame, drawing with a new shape every frame wastes efficiency. It's better to create a shape attribute for each of the individual objects you want to draw, and reuse them.
+
+# draw-shape -- Draw a Shape
+
+Update a shape's graphics, and draws the updated shape onto the screen. This block is required to use the other drawing blocks.

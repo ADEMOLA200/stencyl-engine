@@ -9,3 +9,11 @@ Gets the value of the specified game attribute (using its name).
 # set-game-att -- Set Game Attribute
 
 Sets the value of the specified game attribute (using its name). You are responsible for making sure that you don't set the value to a different type. For example, if the game attribute is a number, don't stick text into that slot.
+
+# set-game-att-save -- Saving Attributes
+
+Change whether a game attribute will be saved (enabled by default).
+
+# restore-game-attributes -- Restore Game Attributes
+
+Restores all game attributes defined in Stencyl to their original value.
