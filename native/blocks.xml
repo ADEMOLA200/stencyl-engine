@@ -28,10 +28,10 @@
         <fields>
             <dropdown order="0">
                 <choices>
-                    <c text="@event.mobile.keyboard.typed" code="KEY_PRESSED" />
-                    <c text="@event.mobile.keyboard.done" code="ENTER_PRESSED" />
-                    <c text="@event.mobile.keyboard.show" code="KEYBOARD_SHOWN" />
-                    <c text="@event.mobile.keyboard.hide" code="KEYBOARD_HIDDEN" />
+                    <c id="typed" text="@event.mobile.keyboard.typed" code="KEY_PRESSED" />
+                    <c id="done" text="@event.mobile.keyboard.done" code="ENTER_PRESSED" />
+                    <c id="show" text="@event.mobile.keyboard.show" code="KEYBOARD_SHOWN" />
+                    <c id="hide" text="@event.mobile.keyboard.hide" code="KEYBOARD_HIDDEN" />
                 </choices>
             </dropdown>
             <code-block order="1" />
@@ -94,8 +94,8 @@
         <fields>
             <dropdown order="0">
                 <choices>
-                    <c text="@block.hide" code="hide" />
-                    <c text="@block.show" code="show" />
+                    <c id="hide" text="@block.hide" code="hide" />
+                    <c id="show" text="@block.show" code="show" />
                 </choices>
             </dropdown>
         </fields>

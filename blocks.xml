@@ -3,875 +3,875 @@
 
     <dropdown id="keyValue">
         <choices>
-            <c text="@keys" code="keys" />
-            <c text="@values" code="values" />
+            <c id="keys" text="@keys" code="keys" />
+            <c id="values" text="@values" code="values" />
         </choices>
     </dropdown>
 
     <dropdown id="lnExp">
         <choices>
-            <c text="@ln" code="log" />
-            <c text="@econst" code="exp" />
+            <c id="log" text="@ln" code="log" />
+            <c id="exp" text="@econst" code="exp" />
         </choices>
     </dropdown>
 
     <dropdown id="pressedReleasedMovedDragged">
         <choices>
-            <c text="@pressed" code="Pressed" />
-            <c text="@released" code="Released" />
-            <c text="@moved" code="Moved" />
-            <c text="@dragged" code="Dragged" />
+            <c id="pressed" text="@pressed" code="Pressed" />
+            <c id="released" text="@released" code="Released" />
+            <c id="moved" text="@moved" code="Moved" />
+            <c id="dragged" text="@dragged" code="Dragged" />
         </choices>
     </dropdown>
 
     <dropdown id="round">
         <choices>
-            <c text="@num.roundtext" code="round" />
-            <c text="@num.floortext" code="floor" />
-            <c text="@num.ceiltext" code="ceil" />
+            <c id="round" text="@num.roundtext" code="round" />
+            <c id="floor" text="@num.floortext" code="floor" />
+            <c id="ceil" text="@num.ceiltext" code="ceil" />
         </choices>
     </dropdown>
 
     <dropdown id="allPlatforms" docAttrType="PLATFORM">
         <choices>
-            <c text="@plaf.flash" code="flash" />
-            <c text="@plaf.html5" code="html5" />
-            <c text="@plaf.desktop" code="desktop" />
-            <c text="@plaf.ios" code="ios" />
-            <c text="@plaf.android" code="android" />
-            <c text="@plaf.web" code="(flash || html5)" />
-            <c text="@plaf.mobile" code="mobile" />
-            <c text="@plaf.win" code="windows" />
-            <c text="@plaf.mac" code="mac" />
-            <c text="@plaf.lin" code="linux" />
+            <c id="flash" text="@plaf.flash" code="flash" />
+            <c id="html5" text="@plaf.html5" code="html5" />
+            <c id="desktop" text="@plaf.desktop" code="desktop" />
+            <c id="ios" text="@plaf.ios" code="ios" />
+            <c id="android" text="@plaf.android" code="android" />
+            <c id="web" text="@plaf.web" code="(flash || html5)" />
+            <c id="mobile" text="@plaf.mobile" code="mobile" />
+            <c id="win" text="@plaf.win" code="windows" />
+            <c id="mac" text="@plaf.mac" code="mac" />
+            <c id="lin" text="@plaf.lin" code="linux" />
         </choices>
     </dropdown>
 
     <dropdown id="easing" docAttrType="EASING">
         <choices>
-            <c text="@easing.none" code="Easing.linear" />
-            <c text="@easing.backin" code="Easing.backIn" />
-            <c text="@easing.backinout" code="Easing.backInOut" />
-            <c text="@easing.backout" code="Easing.backOut" />
-            <c text="@easing.elasticin" code="Easing.elasticIn" />
-            <c text="@easing.elasticinout" code="Easing.elasticInOut" />
-            <c text="@easing.elasticout" code="Easing.elasticOut" />
-            <c text="@easing.regularin" code="Easing.quadIn" />
-            <c text="@easing.regularinout" code="Easing.quadInOut" />
-            <c text="@easing.regularout" code="Easing.quadOut" />
-            <c text="@easing.strongin" code="Easing.expoIn" />
-            <c text="@easing.stronginout" code="Easing.expoInOut" />
-            <c text="@easing.strongout" code="Easing.expoOut" />
+            <c id="none" text="@easing.none" code="Easing.linear" />
+            <c id="backin" text="@easing.backin" code="Easing.backIn" />
+            <c id="backinout" text="@easing.backinout" code="Easing.backInOut" />
+            <c id="backout" text="@easing.backout" code="Easing.backOut" />
+            <c id="elasticin" text="@easing.elasticin" code="Easing.elasticIn" />
+            <c id="elasticinout" text="@easing.elasticinout" code="Easing.elasticInOut" />
+            <c id="elasticout" text="@easing.elasticout" code="Easing.elasticOut" />
+            <c id="regularin" text="@easing.regularin" code="Easing.quadIn" />
+            <c id="regularinout" text="@easing.regularinout" code="Easing.quadInOut" />
+            <c id="regularout" text="@easing.regularout" code="Easing.quadOut" />
+            <c id="strongin" text="@easing.strongin" code="Easing.expoIn" />
+            <c id="stronginout" text="@easing.stronginout" code="Easing.expoInOut" />
+            <c id="strongout" text="@easing.strongout" code="Easing.expoOut" />
         </choices>
     </dropdown>
 
     <dropdown id="filters">
         <choices>
-            <c text="@grayscale" code="Grayscale" />
-            <c text="@invert" code="Invert" />
-            <c text="@sepia" code="Sepia" />
+            <c id="grayscale" text="@grayscale" code="Grayscale" />
+            <c id="invert" text="@invert" code="Invert" />
+            <c id="sepia" text="@sepia" code="Sepia" />
         </choices>
     </dropdown>
 
     <dropdown id="pauseUnpause">
         <choices>
-            <c text="@pause" code="pause" />
-            <c text="@unpause" code="unpause" />
+            <c id="pause" text="@pause" code="pause" />
+            <c id="unpause" text="@unpause" code="unpause" />
         </choices>
     </dropdown>
 
     <dropdown id="trig">
         <choices>
-            <c text="@num.sintext" code="sin" />
-            <c text="@num.costext" code="cos" />
-            <c text="@num.tantext" code="tan" />
-            <c text="@num.asintext" code="asin" />
-            <c text="@num.acostext" code="acos" />
-            <c text="@num.atantext" code="atan" />
+            <c id="sin" text="@num.sintext" code="sin" />
+            <c id="cos" text="@num.costext" code="cos" />
+            <c id="tan" text="@num.tantext" code="tan" />
+            <c id="asin" text="@num.asintext" code="asin" />
+            <c id="acos" text="@num.acostext" code="acos" />
+            <c id="atan" text="@num.atantext" code="atan" />
         </choices>
     </dropdown>
 
     <dropdown id="scaleMethod">
         <choices>
-            <c text="@smoothing" code="true" />
-            <c text="@nosmoothing" code="false" />
+            <c id="smoothing" text="@smoothing" code="true" />
+            <c id="nosmoothing" text="@nosmoothing" code="false" />
         </choices>
     </dropdown>
 
     <dropdown id="actorCreateKill">
         <choices>
-            <c text="@created" code="Created" />
-            <c text="@killed" code="Killed" />
+            <c id="created" text="@created" code="Created" />
+            <c id="killed" text="@killed" code="Killed" />
         </choices>
     </dropdown>
 
     <dropdown id="enableDisable">
         <choices>
-            <c text="@block.enable" code="enable" />
-            <c text="@block.disable" code="disable" />
+            <c id="enable" text="@block.enable" code="enable" />
+            <c id="disable" text="@block.disable" code="disable" />
         </choices>
     </dropdown>
 
     <dropdown id="sensorSolid">
         <choices>
-            <c text="@sactor.shape.sensor" code="true" />
-            <c text="@sactor.shape.solid" code="false" />
+            <c id="sensor" text="@sactor.shape.sensor" code="true" />
+            <c id="solid" text="@sactor.shape.solid" code="false" />
         </choices>
     </dropdown>
 
     <dropdown id="beforeAfter">
         <choices>
-            <c text="@before" code="-1" />
-            <c text="@after" code="1" />
+            <c id="before" text="@before" code="-1" />
+            <c id="after" text="@after" code="1" />
         </choices>
     </dropdown>
 
     <dropdown id="pushShove">
         <choices>
-            <c text="@push" code="push" />
-            <c text="@shove" code="applyImpulse" />
+            <c id="push" text="@push" code="push" />
+            <c id="shove" text="@shove" code="applyImpulse" />
         </choices>
     </dropdown>
 
     <dropdown id="playLoop">
         <choices>
-            <c text="@play" code="play" />
-            <c text="@loop" code="loop" />
+            <c id="play" text="@play" code="play" />
+            <c id="loop" text="@loop" code="loop" />
         </choices>
     </dropdown>
 
     <dropdown id="iPhoneiPad">
         <choices>
-            <c text="@iPhone" code="iPhone" />
-            <c text="@iPad" code="iPad" />
+            <c id="iphone" text="@iPhone" code="iPhone" />
+            <c id="ipad" text="@iPad" code="iPad" />
         </choices>
     </dropdown>
 
     <dropdown id="downPressRelease">
         <choices>
-            <c text="@in.down.yes" code="Down" />
-            <c text="@in.press.yes" code="Pressed" />
-            <c text="@in.release.yes" code="Released" />
+            <c id="down" text="@in.down.yes" code="Down" />
+            <c id="press" text="@in.press.yes" code="Pressed" />
+            <c id="release" text="@in.release.yes" code="Released" />
         </choices>
     </dropdown>
 
     <dropdown id="showHide">
         <choices>
-            <c text="@block.hide" code="hide" />
-            <c text="@block.show" code="show" />
+            <c id="show" text="@block.hide" code="hide" />
+            <c id="hide" text="@block.show" code="show" />
         </choices>
     </dropdown>
 
     <dropdown id="csb">
         <choices>
-            <c text="@contrast" code="contrast" />
-            <c text="@saturation" code="saturation" />
-            <c text="@brightness" code="brightness" />
+            <c id="contrast" text="@contrast" code="contrast" />
+            <c id="saturation" text="@saturation" code="saturation" />
+            <c id="brightness" text="@brightness" code="brightness" />
         </choices>
     </dropdown>
 
     <dropdown id="imageProps2">
         <choices>
-            <c text="@width" code="scaleX" />
-            <c text="@height" code="scaleY" />
-            <c text="@alpha" code="alpha" />
+            <c id="scalex" text="@width" code="scaleX" />
+            <c id="scaley" text="@height" code="scaleY" />
+            <c id="alpha" text="@alpha" code="alpha" />
         </choices>
     </dropdown>
 
     <dropdown id="anyPressedReleased">
         <choices>
-            <c text="@pressed" code="Pressed" />
-            <c text="@released" code="Released" />
+            <c id="pressed" text="@pressed" code="Pressed" />
+            <c id="released" text="@released" code="Released" />
         </choices>
     </dropdown>
 
     <dropdown id="sceneScreen">
         <choices>
-            <c text="@scene" code="Scene" />
-            <c text="@screen" code="Screen" />
+            <c id="scene" text="@scene" code="Scene" />
+            <c id="screen" text="@screen" code="Screen" />
         </choices>
     </dropdown>
 
     <dropdown id="enableDisableTF">
         <choices>
-            <c text="@block.enable" code="true" />
-            <c text="@block.disable" code="false" />
+            <c id="enable" text="@block.enable" code="true" />
+            <c id="disable" text="@block.disable" code="false" />
         </choices>
     </dropdown>
 
     <dropdown id="inOut">
         <choices>
-            <c text="@in" code="1" />
-            <c text="@out" code="0" />
+            <c id="in" text="@in" code="1" />
+            <c id="out" text="@out" code="0" />
         </choices>
     </dropdown>
 
     <dropdown id="xyz">
         <choices>
-            <c text="@x" code="X" />
-            <c text="@y" code="Y" />
-            <c text="@z" code="Z" />
+            <c id="x" text="@x" code="X" />
+            <c id="y" text="@y" code="Y" />
+            <c id="z" text="@z" code="Z" />
         </choices>
     </dropdown>
 
     <dropdown id="scaleMode">
         <choices>
-            <c text="@mobile.settings.basic.scale.none" code="ScaleMode.NO_SCALING" />
-            <c text="@mobile.settings.basic.scale.full" code="ScaleMode.FULLSCREEN" />
-            <c text="@mobile.settings.basic.scale.stretch" code="ScaleMode.STRETCH_TO_FIT" />
-            <c text="@mobile.settings.basic.scale.scale1" code="ScaleMode.SCALE_TO_FIT_LETTERBOX" />
-            <c text="@mobile.settings.basic.scale.scale2" code="ScaleMode.SCALE_TO_FIT_FILL" />
-            <c text="@mobile.settings.basic.scale.scale3" code="ScaleMode.SCALE_TO_FIT_FULLSCREEN" />
+            <c id="none" text="@mobile.settings.basic.scale.none" code="ScaleMode.NO_SCALING" />
+            <c id="fullscreen" text="@mobile.settings.basic.scale.full" code="ScaleMode.FULLSCREEN" />
+            <c id="stretch" text="@mobile.settings.basic.scale.stretch" code="ScaleMode.STRETCH_TO_FIT" />
+            <c id="scale_to_fit_letterbox" text="@mobile.settings.basic.scale.scale1" code="ScaleMode.SCALE_TO_FIT_LETTERBOX" />
+            <c id="scale_to_fit_fill" text="@mobile.settings.basic.scale.scale2" code="ScaleMode.SCALE_TO_FIT_FILL" />
+            <c id="scale_to_fit_fullscreen" text="@mobile.settings.basic.scale.scale3" code="ScaleMode.SCALE_TO_FIT_FULLSCREEN" />
         </choices>
     </dropdown>
 
     <dropdown id="fadeTransitions">
         <choices>
-            <c text="@transition.fadeout" code="createFadeOut" />
-            <c text="@transition.fadein" code="createFadeIn" />
+            <c id="fadeout" text="@transition.fadeout" code="createFadeOut" />
+            <c id="fadein" text="@transition.fadein" code="createFadeIn" />
         </choices>
     </dropdown>
 
     <dropdown id="inputOver">
         <choices>
-            <c text="@in.over.yes" code="" />
-            <c text="@in.over.no" code="!" />
+            <c id="over" text="@in.over.yes" code="" />
+            <c id="not_over" text="@in.over.no" code="!" />
         </choices>
     </dropdown>
 
     <dropdown id="imageProps0">
         <choices>
-            <c text="@x" code="setX" />
-            <c text="@y" code="setY" />
+            <c id="x" text="@x" code="setX" />
+            <c id="y" text="@y" code="setY" />
         </choices>
     </dropdown>
 
     <dropdown id="multitouch">
         <choices>
-            <c text="@started" code="Started" />
-            <c text="@dragged" code="Dragged" />
-            <c text="@released" code="Ended" />
+            <c id="started" text="@started" code="Started" />
+            <c id="dragged" text="@dragged" code="Dragged" />
+            <c id="released" text="@released" code="Ended" />
         </choices>
     </dropdown>
 
     <dropdown id="deviceStates">
         <choices>
-            <c text="@touched" code="Pressed" />
-            <c text="@dragged" code="Dragged" />
-            <c text="@released" code="Released" />
+            <c id="touched" text="@touched" code="Pressed" />
+            <c id="dragged" text="@dragged" code="Dragged" />
+            <c id="released" text="@released" code="Released" />
         </choices>
     </dropdown>
 
     <dropdown id="allDevices2">
         <choices>
-            <c text="@ios.standard" code="Engine.isStandardIOS" />
-            <c text="@ios.extended" code="Engine.isExtendedIOS" />
-            <c text="@ios.iphone6" code="Engine.isIPhone6" />
-            <c text="@ios.iphone6p" code="Engine.isIPhone6Plus" />
-            <c text="@ios.tablet" code="Engine.isTabletIOS" />
-            <c text="@ios.iphonex" code="Engine.isIPhoneX" />
-            <c text="@ios.iphonexmax" code="Engine.isIPhoneXMax" />
-            <c text="@ios.iphonexr" code="Engine.isIPhoneXR" />
+            <c id="standard" text="@ios.standard" code="Engine.isStandardIOS" />
+            <c id="extended" text="@ios.extended" code="Engine.isExtendedIOS" />
+            <c id="iphone6" text="@ios.iphone6" code="Engine.isIPhone6" />
+            <c id="iphone6p" text="@ios.iphone6p" code="Engine.isIPhone6Plus" />
+            <c id="tablet" text="@ios.tablet" code="Engine.isTabletIOS" />
+            <c id="iphonex" text="@ios.iphonex" code="Engine.isIPhoneX" />
+            <c id="iphonexmax" text="@ios.iphonexmax" code="Engine.isIPhoneXMax" />
+            <c id="iphonexr" text="@ios.iphonexr" code="Engine.isIPhoneXR" />
         </choices>
     </dropdown>
 
     <dropdown id="shiftCtrl">
         <choices>
-            <c text="@in.shift" code="Shift" />
-            <c text="@in.ctrl" code="Ctrl" />
+            <c id="shift" text="@in.shift" code="Shift" />
+            <c id="ctrl" text="@in.ctrl" code="Ctrl" />
         </choices>
     </dropdown>
 
     <dropdown id="inKeyValue">
         <choices>
-            <c text="@key" code=".keys()" />
-            <c text="@value" code="" />
+            <c id="keys" text="@key" code=".keys()" />
+            <c id="values" text="@value" code="" />
         </choices>
     </dropdown>
 
     <dropdown id="focusState">
         <choices>
-            <c text="@loses" code="" />
-            <c text="@gains" code="!" />
+            <c id="lost" text="@loses" code="" />
+            <c id="gained" text="@gains" code="!" />
         </choices>
     </dropdown>
 
     <dropdown id="setZ">
         <choices>
-            <c text="@back1" code="bringImageBack" />
-            <c text="@forward1" code="bringImageForward" />
-            <c text="@toback" code="bringImageToBack" />
-            <c text="@tofront" code="bringImageToFront" />
+            <c id="backward" text="@back1" code="bringImageBack" />
+            <c id="forward" text="@forward1" code="bringImageForward" />
+            <c id="to_back" text="@toback" code="bringImageToBack" />
+            <c id="to_front" text="@tofront" code="bringImageToFront" />
         </choices>
     </dropdown>
 
     <dropdown id="collisionHitActive">
         <choices>
-            <c text="@collision.hit.yes.active" code="" />
-            <c text="@collision.hit.no.active" code="!" />
+            <c id="active" text="@collision.hit.yes.active" code="" />
+            <c id="inactive" text="@collision.hit.no.active" code="!" />
         </choices>
     </dropdown>
 
     <dropdown id="backForward">
         <choices>
-            <c text="@back1" code="sendBackward" />
-            <c text="@forward1" code="bringForward" />
-            <c text="@toback" code="sendToBack" />
-            <c text="@tofront" code="bringToFront" />
+            <c id="backward" text="@back1" code="sendBackward" />
+            <c id="forward" text="@forward1" code="bringForward" />
+            <c id="to_back" text="@toback" code="sendToBack" />
+            <c id="to_front" text="@tofront" code="bringToFront" />
         </choices>
     </dropdown>
 
     <dropdown id="layersFrontBack">
         <choices>
-            <c text="@layer.front" code="1" />
-            <c text="@layer.back" code="2" />
+            <c id="front" text="@layer.front" code="1" />
+            <c id="back" text="@layer.back" code="2" />
         </choices>
     </dropdown>
 
     <dropdown id="loadUnload">
         <choices>
-            <c text="@load" code="load" />
-            <c text="@unload" code="unload" />
+            <c id="load" text="@load" code="load" />
+            <c id="unload" text="@unload" code="unload" />
         </choices>
     </dropdown>
 
     <dropdown id="imageProps1">
         <choices>
-            <c text="@direction" code="rotation" />
+            <c id="direction" text="@direction" code="rotation" />
         </choices>
     </dropdown>
 
     <dropdown id="widthHeight">
         <choices>
-            <c text="@width" code="Width" />
-            <c text="@height" code="Height" />
+            <c id="width" text="@width" code="Width" />
+            <c id="height" text="@height" code="Height" />
         </choices>
     </dropdown>
 
     <dropdown id="blend" docAttrType="BLEND MODE">
         <choices>
-            <c text="@blend.add" code="BlendMode.ADD" />
-            <c text="@blend.alpha" code="BlendMode.ALPHA" />
-            <c text="@blend.darken" code="BlendMode.DARKEN" />
-            <c text="@blend.difference" code="BlendMode.DIFFERENCE" />
-            <c text="@blend.erase" code="BlendMode.ERASE" />
-            <c text="@blend.hardlight" code="BlendMode.HARDLIGHT" />
-            <c text="@blend.invert" code="BlendMode.INVERT" />
-            <c text="@blend.lighten" code="BlendMode.LIGHTEN" />
-            <c text="@blend.multiply" code="BlendMode.MULTIPLY" />
-            <c text="@blend.normal" code="BlendMode.NORMAL" />
-            <c text="@blend.overlay" code="BlendMode.OVERLAY" />
-            <c text="@blend.screen" code="BlendMode.SCREEN" />
-            <c text="@blend.subtract" code="BlendMode.SUBTRACT" />
+            <c id="add" text="@blend.add" code="BlendMode.ADD" />
+            <c id="alpha" text="@blend.alpha" code="BlendMode.ALPHA" />
+            <c id="darken" text="@blend.darken" code="BlendMode.DARKEN" />
+            <c id="difference" text="@blend.difference" code="BlendMode.DIFFERENCE" />
+            <c id="erase" text="@blend.erase" code="BlendMode.ERASE" />
+            <c id="hardlight" text="@blend.hardlight" code="BlendMode.HARDLIGHT" />
+            <c id="invert" text="@blend.invert" code="BlendMode.INVERT" />
+            <c id="lighten" text="@blend.lighten" code="BlendMode.LIGHTEN" />
+            <c id="multiply" text="@blend.multiply" code="BlendMode.MULTIPLY" />
+            <c id="normal" text="@blend.normal" code="BlendMode.NORMAL" />
+            <c id="overlay" text="@blend.overlay" code="BlendMode.OVERLAY" />
+            <c id="screen" text="@blend.screen" code="BlendMode.SCREEN" />
+            <c id="subtract" text="@blend.subtract" code="BlendMode.SUBTRACT" />
         </choices>
     </dropdown>
 
     <dropdown id="greaterLessThan">
         <choices>
-            <c text="@greater" code="&gt;" />
-            <c text="@less" code="&lt;" />
+            <c id="greater" text="@greater" code="&gt;" />
+            <c id="less" text="@less" code="&lt;" />
         </choices>
     </dropdown>
 
     <dropdown id="grav">
         <choices>
-            <c text="@horizontal" code="x" />
-            <c text="@vertical" code="y" />
+            <c id="horizontal" text="@horizontal" code="x" />
+            <c id="vertical" text="@vertical" code="y" />
         </choices>
     </dropdown>
 
     <dropdown id="equalUnequal">
         <choices>
-            <c text="@equal" code="" />
-            <c text="@notequal" code="!" />
+            <c id="equal" text="@equal" code="" />
+            <c id="notequal" text="@notequal" code="!" />
         </choices>
     </dropdown>
 
     <dropdown id="multitouchPart">
         <choices>
-            <c text="@ID" code="touchPointID)" />
-            <c text="@x" code="stageX - Engine.screenOffsetX) / (Engine.screenScaleX * Engine.SCALE)" />
-            <c text="@y" code="stageY - Engine.screenOffsetY) / (Engine.screenScaleY * Engine.SCALE)" />
+            <c id="id" text="@ID" code="touchPointID)" />
+            <c id="x" text="@x" code="stageX - Engine.screenOffsetX) / (Engine.screenScaleX * Engine.SCALE)" />
+            <c id="y" text="@y" code="stageY - Engine.screenOffsetY) / (Engine.screenScaleY * Engine.SCALE)" />
         </choices>
     </dropdown>
 
     <dropdown id="deviceStates2">
         <choices>
-            <c text="@touched" code="0" />
-            <c text="@dragged" code="1" />
-            <c text="@released" code="2" />
+            <c id="touched" text="@touched" code="0" />
+            <c id="dragged" text="@dragged" code="1" />
+            <c id="released" text="@released" code="2" />
         </choices>
     </dropdown>
 
     <dropdown id="allDevices">
         <choices>
-            <c text="@ios.standard" code="Engine.isStandardIOS" />
-            <c text="@ios.extended" code="Engine.isExtendedIOS" />
-            <c text="@ios.tablet" code="Engine.isTabletIOS" />
+            <c id="ios.standard" text="@ios.standard" code="Engine.isStandardIOS" />
+            <c id="ios.extended" text="@ios.extended" code="Engine.isExtendedIOS" />
+            <c id="ios.tablet" text="@ios.tablet" code="Engine.isTabletIOS" />
         </choices>
     </dropdown>
 
     <dropdown id="drawFill">
         <choices>
-            <c text="@draw" code="draw" />
-            <c text="@fill" code="fill" />
+            <c id="draw" text="@draw" code="draw" />
+            <c id="fill" text="@fill" code="fill" />
         </choices>
     </dropdown>
 
     <dropdown id="firstSecondAB">
         <choices>
-            <c text="@first" code="A" />
-            <c text="@second" code="B" />
+            <c id="first" text="@first" code="A" />
+            <c id="second" text="@second" code="B" />
         </choices>
     </dropdown>
 
     <dropdown id="is">
         <choices>
-            <c text="@is" code="true" />
-            <c text="@isnt" code="false" />
+            <c id="is" text="@is" code="true" />
+            <c id="isnt" text="@isnt" code="false" />
         </choices>
     </dropdown>
 
     <dropdown id="upDownLeftRight">
         <choices>
-            <c text="@up" code="Up" />
-            <c text="@down" code="Down" />
-            <c text="@left" code="Left" />
-            <c text="@right" code="Right" />
+            <c id="up" text="@up" code="Up" />
+            <c id="down" text="@down" code="Down" />
+            <c id="left" text="@left" code="Left" />
+            <c id="right" text="@right" code="Right" />
         </choices>
     </dropdown>
 
     <dropdown id="xyVelocity">
         <choices>
-            <c text="@xspeed" code="XVelocity" />
-            <c text="@yspeed" code="YVelocity" />
+            <c id="xvelocity" text="@xspeed" code="XVelocity" />
+            <c id="yvelocity" text="@yspeed" code="YVelocity" />
         </choices>
     </dropdown>
 
     <dropdown id="key">
         <choices>
-            <c text="@in.enter" code="ENTER" />
-            <c text="@in.backspace" code="BACKSPACE" />
-            <c text="@in.delete" code="DELETE" />
-            <c text="@in.shift" code="SHIFT" />
-            <c text="@in.ctrl" code="CONTROL" />
+            <c id="enter" text="@in.enter" code="ENTER" />
+            <c id="backspace" text="@in.backspace" code="BACKSPACE" />
+            <c id="delete" text="@in.delete" code="DELETE" />
+            <c id="shift" text="@in.shift" code="SHIFT" />
+            <c id="ctrl" text="@in.ctrl" code="CONTROL" />
         </choices>
     </dropdown>
 
     <dropdown id="mouseLocations">
         <choices>
-            <c text="@in.mouse.loc" code="" />
-            <c text="@in.mouse.pressloc" code="Pressed" />
-            <c text="@in.mouse.releaseloc" code="Released" />
+            <c id="hoverloc" text="@in.mouse.loc" code="" />
+            <c id="pressloc" text="@in.mouse.pressloc" code="Pressed" />
+            <c id="releaseloc" text="@in.mouse.releaseloc" code="Released" />
         </choices>
     </dropdown>
 
     <dropdown id="tiled">
         <choices>
-            <c text="@tiled" code="true" />
-            <c text="@nontiled" code="false" />
+            <c id="tiled" text="@tiled" code="true" />
+            <c id="nontiled" text="@nontiled" code="false" />
         </choices>
     </dropdown>
 
     <dropdown id="fadeInOut">
         <choices>
-            <c text="@fadein" code="fadeIn" />
-            <c text="@fadeout" code="fadeOut" />
+            <c id="fadein" text="@fadein" code="fadeIn" />
+            <c id="fadeout" text="@fadeout" code="fadeOut" />
         </choices>
     </dropdown>
 
     <dropdown id="touchDragRelease">
         <choices>
-            <c text="@touch" code="Pressed" />
-            <c text="@drag" code="" />
-            <c text="@release" code="Released" />
-            <c text="@curtouch" code="" />
+            <c id="touch" text="@touch" code="Pressed" />
+            <c id="drag" text="@drag" code="" />
+            <c id="release" text="@release" code="Released" />
+            <c id="curtouch" text="@curtouch" code="" />
         </choices>
     </dropdown>
 
     <dropdown id="layerIDs">
         <choices>
-            <c text="@ID" code="0" />
-            <c text="@name" code="1" />
+            <c id="id" text="@ID" code="0" />
+            <c id="name" text="@name" code="1" />
         </choices>
     </dropdown>
 
     <dropdown id="throughTransitions">
         <choices>
-            <c text="@transition.crossfade" code="createCrossfadeTransition" />
-            <c text="@transition.slide.up" code="createSlideUpTransition" />
-            <c text="@transition.slide.down" code="createSlideDownTransition" />
-            <c text="@transition.slide.left" code="createSlideLeftTransition" />
-            <c text="@transition.slide.right" code="createSlideRightTransition" />
+            <c id="crossfade" text="@transition.crossfade" code="createCrossfadeTransition" />
+            <c id="slide.up" text="@transition.slide.up" code="createSlideUpTransition" />
+            <c id="slide.down" text="@transition.slide.down" code="createSlideDownTransition" />
+            <c id="slide.left" text="@transition.slide.left" code="createSlideLeftTransition" />
+            <c id="slide.right" text="@transition.slide.right" code="createSlideRightTransition" />
         </choices>
     </dropdown>
 
     <dropdown id="touchedDraggedReleased2">
         <choices>
-            <c text="@touched" code="Pressed" />
-            <c text="@isdragging" code="Down" />
-            <c text="@released" code="Released" />
-            <c text="@istouching" code="Down" />
+            <c id="touched" text="@touched" code="Pressed" />
+            <c id="isdragging" text="@isdragging" code="Down" />
+            <c id="released" text="@released" code="Released" />
+            <c id="istouching" text="@istouching" code="Down" />
         </choices>
     </dropdown>
 
     <dropdown id="kupDown">
         <choices>
-            <c text="@down" code="" />
-            <c text="@up" code="!" />
+            <c id="down" text="@down" code="" />
+            <c id="up" text="@up" code="!" />
         </choices>
     </dropdown>
 
     <dropdown id="xy">
         <choices>
-            <c text="@x" code="X" />
-            <c text="@y" code="Y" />
+            <c id="x" text="@x" code="X" />
+            <c id="y" text="@y" code="Y" />
         </choices>
     </dropdown>
 
     <dropdown id="topBottomLeftRight">
         <choices>
-            <c text="@topside" code="top" />
-            <c text="@bottomside" code="bottom" />
-            <c text="@leftside" code="left" />
-            <c text="@rightside" code="right" />
+            <c id="top" text="@topside" code="top" />
+            <c id="bottom" text="@bottomside" code="bottom" />
+            <c id="left" text="@leftside" code="left" />
+            <c id="right" text="@rightside" code="right" />
         </choices>
     </dropdown>
 
     <dropdown id="collisionPoints">
         <choices>
-            <c text="@x" code="x" />
-            <c text="@y" code="y" />
-            <c text="@collision.normal.x" code="normalX" />
-            <c text="@collision.normal.y" code="normalY" />
+            <c id="x" text="@x" code="x" />
+            <c id="y" text="@y" code="y" />
+            <c id="normal.x" text="@collision.normal.x" code="normalX" />
+            <c id="normal.y" text="@collision.normal.y" code="normalY" />
         </choices>
     </dropdown>
 
     <dropdown id="collisionType">
         <choices>
-            <c text="@collision.hit.actor" code="Actor" />
-            <c text="@collision.hit.terrain" code="Terrain" />
-            <c text="@collision.hit.tile" code="Tile" />
-            <c text="@collision.hit.sensor" code="Sensor" />
+            <c id="actor" text="@collision.hit.actor" code="Actor" />
+            <c id="terrain" text="@collision.hit.terrain" code="Terrain" />
+            <c id="tile" text="@collision.hit.tile" code="Tile" />
+            <c id="sensor" text="@collision.hit.sensor" code="Sensor" />
         </choices>
     </dropdown>
 
     <dropdown id="layers">
         <choices>
-            <c text="@layer.front" code="Script.FRONT" />
-            <c text="@layer.middle" code="Script.MIDDLE" />
-            <c text="@layer.back" code="Script.BACK" />
+            <c id="front" text="@layer.front" code="Script.FRONT" />
+            <c id="middle" text="@layer.middle" code="Script.MIDDLE" />
+            <c id="back" text="@layer.back" code="Script.BACK" />
         </choices>
     </dropdown>
 
     <dropdown id="sceneWidthHeight">
         <choices>
-            <c text="@scene.scenewh.wp" code="getSceneWidth()" />
-            <c text="@scene.scenewh.hp" code="getSceneHeight()" />
-            <c text="@scene.scenewh.wt" code="Std.int(getSceneWidth()/getTileWidth())" />
-            <c text="@scene.scenewh.ht" code="Std.int(getSceneHeight()/getTileHeight())" />
+            <c id="width.pixels" text="@scene.scenewh.wp" code="getSceneWidth()" />
+            <c id="height.pixels" text="@scene.scenewh.hp" code="getSceneHeight()" />
+            <c id="width.tiles" text="@scene.scenewh.wt" code="Std.int(getSceneWidth()/getTileWidth())" />
+            <c id="height.tiles" text="@scene.scenewh.ht" code="Std.int(getSceneHeight()/getTileHeight())" />
         </choices>
     </dropdown>
 
     <dropdown id="touchedDraggedReleased">
         <choices>
-            <c text="@started" code="Pressed" />
-            <c text="@dragged" code="Down" />
-            <c text="@released" code="Released" />
-            <c text="@down" code="Down" />
+            <c id="started" text="@started" code="Pressed" />
+            <c id="dragged" text="@dragged" code="Down" />
+            <c id="released" text="@released" code="Released" />
+            <c id="down" text="@down" code="Down" />
         </choices>
     </dropdown>
 
     <dropdown id="pauseState">
         <choices>
-            <c text="@paused" code="" />
-            <c text="@unpaused" code="!" />
+            <c id="paused" text="@paused" code="" />
+            <c id="unpaused" text="@unpaused" code="!" />
         </choices>
     </dropdown>
 
     <dropdown id="alwaysSometimes">
         <choices>
-            <c text="@always" code="Always" />
-            <c text="@sometimes" code="Sometimes" />
+            <c id="always" text="@always" code="Always" />
+            <c id="sometimes" text="@sometimes" code="Sometimes" />
         </choices>
     </dropdown>
 
     <dropdown id="inputHover">
         <choices>
-            <c text="@in.hover.yes" code="" />
-            <c text="@in.hover.no" code="!" />
+            <c id="hover.yes" text="@in.hover.yes" code="" />
+            <c id="hover.no" text="@in.hover.no" code="!" />
         </choices>
     </dropdown>
 
     <dropdown id="responseType">
         <choices>
-            <c text="@sactor.shape.sensor" code="&quot;sensor&quot;" />
-            <c text="@sactor.shape.solid" code="&quot;solid&quot;" />
+            <c id="sensor" text="@sactor.shape.sensor" code="&quot;sensor&quot;" />
+            <c id="solid" text="@sactor.shape.solid" code="&quot;solid&quot;" />
         </choices>
     </dropdown>
 
     <dropdown id="drawFill2">
         <choices>
-            <c text="@draw.outlined" code="Draw" />
-            <c text="@draw.filled" code="Fill" />
+            <c id="draw" text="@draw.outlined" code="Draw" />
+            <c id="fill" text="@draw.filled" code="Fill" />
         </choices>
     </dropdown>
 
     <dropdown id="transToBy">
         <choices>
-            <c text="@by" code="translate" />
-            <c text="@to" code="moveTo" />
+            <c id="by" text="@by" code="translate" />
+            <c id="to" text="@to" code="moveTo" />
         </choices>
     </dropdown>
 
     <dropdown id="outTransitions">
         <choices>
-            <c text="@transition.fadeout" code="createFadeOut" />
-            <c text="@transition.blinds.out" code="createBlindsOut" />
-            <c text="@transition.bubbles.out" code="createBubblesOut" />
-            <c text="@transition.circle.out" code="createCircleOut" />
-            <c text="@transition.pixel.out" code="createPixelizeOut" />
-            <c text="@transition.box.out" code="createRectangleOut" />
+            <c id="fadeout" text="@transition.fadeout" code="createFadeOut" />
+            <c id="blinds.out" text="@transition.blinds.out" code="createBlindsOut" />
+            <c id="bubbles.out" text="@transition.bubbles.out" code="createBubblesOut" />
+            <c id="circle.out" text="@transition.circle.out" code="createCircleOut" />
+            <c id="pixel.out" text="@transition.pixel.out" code="createPixelizeOut" />
+            <c id="box.out" text="@transition.box.out" code="createRectangleOut" />
         </choices>
     </dropdown>
 
     <dropdown id="collisionActors">
         <choices>
-            <c text="@col.actor1" code="this" />
-            <c text="@col.actor2" code="other" />
+            <c id="this" text="@col.actor1" code="this" />
+            <c id="other" text="@col.actor2" code="other" />
         </choices>
     </dropdown>
 
     <dropdown id="entersExits2">
         <choices>
-            <c text="@enters" code="Entered" />
-            <c text="@exits" code="Exited" />
+            <c id="enters" text="@enters" code="Entered" />
+            <c id="exits" text="@exits" code="Exited" />
         </choices>
     </dropdown>
 
     <dropdown id="mouseStates">
         <choices>
-            <c text="@enters" code="1" />
-            <c text="@exits" code="-1" />
-            <c text="@pressedon" code="3" />
-            <c text="@draggedon" code="4" />
-            <c text="@releasedon" code="5" />
+            <c id="enters" text="@enters" code="1" />
+            <c id="exits" text="@exits" code="-1" />
+            <c id="pressedon" text="@pressedon" code="3" />
+            <c id="draggedon" text="@draggedon" code="4" />
+            <c id="releasedon" text="@releasedon" code="5" />
         </choices>
     </dropdown>
 
     <dropdown id="value">
         <choices>
-            <c text="@value.hasvalue" code="" />
-            <c text="@value.hasnovalue" code="!" />
+            <c id="hasvalue" text="@value.hasvalue" code="" />
+            <c id="hasnovalue" text="@value.hasnovalue" code="!" />
         </choices>
     </dropdown>
 
     <dropdown id="degreesRadians">
         <choices>
-            <c text="@degrees" code="DEG" />
-            <c text="@radians" code="RAD" />
+            <c id="degrees" text="@degrees" code="DEG" />
+            <c id="radians" text="@radians" code="RAD" />
         </choices>
     </dropdown>
 
     <dropdown id="xyCenterScreen">
         <choices>
-            <c text="@x" code="X" />
-            <c text="@y" code="Y" />
-            <c text="@xc" code="XCenter" />
-            <c text="@yc" code="YCenter" />
-            <c text="@xscreen" code="ScreenX" />
-            <c text="@yscreen" code="ScreenY" />
+            <c id="x" text="@x" code="X" />
+            <c id="y" text="@y" code="Y" />
+            <c id="x.center" text="@xc" code="XCenter" />
+            <c id="y.center" text="@yc" code="YCenter" />
+            <c id="x.screen" text="@xscreen" code="ScreenX" />
+            <c id="y.screen" text="@yscreen" code="ScreenY" />
         </choices>
     </dropdown>
 
     <dropdown id="upperLower">
         <choices>
-            <c text="@upper" code="Upper" />
-            <c text="@lower" code="Lower" />
+            <c id="upper" text="@upper" code="Upper" />
+            <c id="lower" text="@lower" code="Lower" />
         </choices>
     </dropdown>
 
     <dropdown id="byTo">
         <choices>
-            <c text="@by" code="By" />
-            <c text="@to" code="To" />
+            <c id="by" text="@by" code="By" />
+            <c id="to" text="@to" code="To" />
         </choices>
     </dropdown>
 
     <dropdown id="inTransitions">
         <choices>
-            <c text="@transition.fadein" code="createFadeIn" />
-            <c text="@transition.blinds.in" code="createBlindsIn" />
-            <c text="@transition.bubbles.in" code="createBubblesIn" />
-            <c text="@transition.circle.in" code="createCircleIn" />
-            <c text="@transition.pixel.in" code="createPixelizeIn" />
-            <c text="@transition.box.in" code="createRectangleIn" />
+            <c id="fadein" text="@transition.fadein" code="createFadeIn" />
+            <c id="blinds.in" text="@transition.blinds.in" code="createBlindsIn" />
+            <c id="bubbles.in" text="@transition.bubbles.in" code="createBubblesIn" />
+            <c id="circle.in" text="@transition.circle.in" code="createCircleIn" />
+            <c id="pixel.in" text="@transition.pixel.in" code="createPixelizeIn" />
+            <c id="box.in" text="@transition.box.in" code="createRectangleIn" />
         </choices>
     </dropdown>
 
     <dropdown id="collisionHit">
         <choices>
-            <c text="@collision.hit.yes" code="" />
-            <c text="@collision.hit.no" code="!" />
+            <c id="hit.yes" text="@collision.hit.yes" code="" />
+            <c id="hit.no" text="@collision.hit.no" code="!" />
         </choices>
     </dropdown>
 
     <dropdown id="entersExits">
         <choices>
-            <c text="@enters" code="entered" />
-            <c text="@exits" code="exited" />
+            <c id="enters" text="@enters" code="entered" />
+            <c id="exits" text="@exits" code="exited" />
         </choices>
     </dropdown>
 
     <dropdown id="passOrNot">
         <choices>
-            <c text="@block.enable" code="NotPass" />
-            <c text="@block.disable" code="Pass" />
+            <c id="notpass" text="@block.enable" code="NotPass" />
+            <c id="pass" text="@block.disable" code="Pass" />
         </choices>
     </dropdown>
 
     <dropdown id="imageProps3">
         <choices>
-            <c text="@x" code="x/Engine.SCALE" />
-            <c text="@y" code="y/Engine.SCALE" />
-            <c text="@direction" code="rotation" />
-            <c text="@width" code="width/Engine.SCALE" />
-            <c text="@height" code="height/Engine.SCALE" />
-            <c text="@scalex" code="scaleX*100" />
-            <c text="@scaley" code="scaleY*100" />
-            <c text="@alpha" code="alpha" />
+            <c id="x" text="@x" code="x/Engine.SCALE" />
+            <c id="y" text="@y" code="y/Engine.SCALE" />
+            <c id="direction" text="@direction" code="rotation" />
+            <c id="width" text="@width" code="width/Engine.SCALE" />
+            <c id="height" text="@height" code="height/Engine.SCALE" />
+            <c id="scalex" text="@scalex" code="scaleX*100" />
+            <c id="scaley" text="@scaley" code="scaleY*100" />
+            <c id="alpha" text="@alpha" code="alpha" />
         </choices>
     </dropdown>
 
     <dropdown id="showHideEnableDisable">
         <choices>
-            <c text="@block.show" code="enable" />
-            <c text="@block.hide" code="disable" />
+            <c id="show" text="@block.show" code="enable" />
+            <c id="hide" text="@block.hide" code="disable" />
         </choices>
     </dropdown>
 
     <dropdown id="smallerLarger">
         <choices>
-            <c text="@smaller" code="min" />
-            <c text="@larger" code="max" />
+            <c id="min" text="@smaller" code="min" />
+            <c id="max" text="@larger" code="max" />
         </choices>
     </dropdown>
 
     <dropdown id="pressRelease">
         <choices>
-            <c text="@press" code="Press" />
-            <c text="@release" code="Release" />
+            <c id="press" text="@press" code="Press" />
+            <c id="release" text="@release" code="Release" />
         </choices>
     </dropdown>
 
     <dropdown id="widthHeightHalf">
         <choices>
-            <c text="@width" code="Width()" />
-            <c text="@height" code="Height()" />
-            <c text="@hwidth" code="Width()/2" />
-            <c text="@hheight" code="Height()/2" />
+            <c id="width" text="@width" code="Width()" />
+            <c id="height" text="@height" code="Height()" />
+            <c id="halfwidth" text="@hwidth" code="Width()/2" />
+            <c id="halfheight" text="@hheight" code="Height()/2" />
         </choices>
     </dropdown>
 
     <dropdown id="incDec">
         <choices>
-            <c text="@increment" code="+" />
-            <c text="@decrement" code="-" />
+            <c id="increment" text="@increment" code="+" />
+            <c id="decrement" text="@decrement" code="-" />
         </choices>
     </dropdown>
 
     <dropdown id="allPositions">
         <choices>
-            <c text="@x" code="X" />
-            <c text="@y" code="Y" />
-            <c text="@xc" code="XCenter" />
-            <c text="@yc" code="YCenter" />
+            <c id="x" text="@x" code="X" />
+            <c id="y" text="@y" code="Y" />
+            <c id="x.center" text="@xc" code="XCenter" />
+            <c id="y.center" text="@yc" code="YCenter" />
         </choices>
     </dropdown>
 
     <dropdown id="pressedReleased">
         <choices>
-            <c text="@pressed" code="pressed" />
-            <c text="@released" code="released" />
+            <c id="pressed" text="@pressed" code="pressed" />
+            <c id="released" text="@released" code="released" />
         </choices>
     </dropdown>
 
     <dropdown id="inputPress">
         <choices>
-            <c text="@in.press.yes" code="" />
-            <c text="@in.press.no" code="!" />
+            <c id="pressed" text="@in.press.yes" code="" />
+            <c id="not_pressed" text="@in.press.no" code="!" />
         </choices>
     </dropdown>
 
     <dropdown id="moveWithinLayer">
         <choices>
-            <c text="@down" code="Down" />
-            <c text="@up" code="Up" />
-            <c text="@tothebottom" code="ToBottom" />
-            <c text="@tothetop" code="ToTop" />
+            <c id="down" text="@down" code="Down" />
+            <c id="up" text="@up" code="Up" />
+            <c id="to_bottom" text="@tothebottom" code="ToBottom" />
+            <c id="to_top" text="@tothetop" code="ToTop" />
         </choices>
     </dropdown>
 
     <dropdown id="soundPlayback">
         <choices>
-            <c text="@stop" code="stop" />
-            <c text="@pause" code="pause" />
-            <c text="@resume" code="resume" />
+            <c id="stop" text="@stop" code="stop" />
+            <c id="pause" text="@pause" code="pause" />
+            <c id="resume" text="@resume" code="resume" />
         </choices>
     </dropdown>
 
     <dropdown id="degreesRadiansInline">
         <choices>
-            <c text="@degrees" code=" * Utils.RAD" />
-            <c text="@radians" code="" />
+            <c id="degrees" text="@degrees" code=" * Utils.RAD" />
+            <c id="radians" text="@radians" code="" />
         </choices>
     </dropdown>
 
     <dropdown id="mask">
         <choices>
-            <c text="@clear" code="clearImageUsingMask" />
-            <c text="@retain" code="retainImageUsingMask" />
+            <c id="clear" text="@clear" code="clearImageUsingMask" />
+            <c id="retain" text="@retain" code="retainImageUsingMask" />
         </choices>
     </dropdown>
 
     <dropdown id="physics">
         <choices>
-            <c text="@friction" code="Friction" />
-            <c text="@bounciness" code="Bounciness" />
-            <c text="@mass" code="Mass" />
-            <c text="@angularmass" code="AngularMass" />
-            <c text="@lineardamping" code="LinearDamping" />
-            <c text="@angulardamping" code="AngularDamping" />
+            <c id="friction" text="@friction" code="Friction" />
+            <c id="bounciness" text="@bounciness" code="Bounciness" />
+            <c id="mass" text="@mass" code="Mass" />
+            <c id="angularmass" text="@angularmass" code="AngularMass" />
+            <c id="lineardamping" text="@lineardamping" code="LinearDamping" />
+            <c id="angulardamping" text="@angulardamping" code="AngularDamping" />
         </choices>
     </dropdown>
 
     <dropdown id="horizVert">
         <choices>
-            <c text="@horizontal" code="Horizontal" />
-            <c text="@vertical" code="Vertical" />
+            <c id="horizontal" text="@horizontal" code="Horizontal" />
+            <c id="vertical" text="@vertical" code="Vertical" />
         </choices>
     </dropdown>
 
     <dropdown id="mouseActor">
         <choices>
-            <c text="@in.down.actor.yes" code="Down" />
-            <c text="@in.press.actor.yes" code="Pressed" />
-            <c text="@in.release.actor.yes" code="Released" />
-            <c text="@in.over.yes" code="Over" />
+            <c id="down" text="@in.down.actor.yes" code="Down" />
+            <c id="pressed" text="@in.press.actor.yes" code="Pressed" />
+            <c id="released" text="@in.release.actor.yes" code="Released" />
+            <c id="over" text="@in.over.yes" code="Over" />
         </choices>
     </dropdown>
 
     <dropdown id="inputRelease">
         <choices>
-            <c text="@in.release.yes" code="" />
-            <c text="@in.release.no" code="!" />
+            <c id="released" text="@in.release.yes" code="" />
+            <c id="not_released" text="@in.release.no" code="!" />
         </choices>
     </dropdown>
 
     <dropdown id="columnRow">
         <choices>
-            <c text="@scene.tile.col" code="0" />
-            <c text="@scene.tile.row" code="1" />
+            <c id="column" text="@scene.tile.col" code="0" />
+            <c id="row" text="@scene.tile.row" code="1" />
         </choices>
     </dropdown>
 
