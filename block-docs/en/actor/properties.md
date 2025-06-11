@@ -72,6 +72,13 @@ Lets you perform certain actions on each collision shape for the actor. Use the 
 
 Sets the collision shape to be solid or a sensor (not solid but still can detect collisions).
 
+{ code }
+
+```
+$blockCode([shape-sensorsolid2 0 ""]) //Make it a sensor
+$blockCode([shape-sensorsolid2 1 ""]) //Make it solid
+```
+
 # shape-destroy2 -- Remove Collision Shape
 
 Removes the collision shape from the actor.

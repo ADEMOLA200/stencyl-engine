@@ -8,7 +8,7 @@ A local attribute can only be used within the scope where it's defined: all of t
 
 #### Example:
 
-``` { .design-mode img="local-attr-example.png" }
+```design-mode { alt="local attributes example" img="local-attr-example.png" }
 [init]
   [comment-short "local 1 is not yet defined here."]
   [if [more [random] .5]]

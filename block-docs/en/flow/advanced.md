@@ -2,9 +2,13 @@
 
 Lets you embed code into your Behavior. Can be used in many ways. Particularly useful for calling functions that Stencyl or Haxe provide but don't exist in block form. Take a look at our [API](https://static.stencyl.com/api/33/) to see what's available.
 
+{ code }
+
 # code-short -- Code Block (Inline)
 
 Lets you embed a fragment of code into a block field.
+
+{ code }
 
 # game-url -- Game URL
 

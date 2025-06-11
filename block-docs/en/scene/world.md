@@ -14,6 +14,8 @@ Returns the current scene's [width/height] in [pixels/tiles].
 
 Returns the current scene's name.
 
+# palette.scene.world.tiles -- Tile API
+
 # tile-wh -- Tile Width / Height
 
 Returns the current scene's tile width/height.
@@ -21,6 +23,13 @@ Returns the current scene's tile width/height.
 # tile-coord-at -- Convert to Tile Coordinates
 
 Converts a coordinate from pixels (real location) to tiles. In other words, divides the coordinate by the tile width or height respectively.
+
+{ code }
+
+```
+$blockCode([tile-coord-at 0 0]) //x coordinate
+$blockCode([tile-coord-at 1 0]) //y coordinate
+```
 
 # set-tile-at2 -- Set a Tile
 

@@ -22,6 +22,14 @@ Removes the entry for the specified key from the map.
 
 Removes all entries from the map.
 
+{ code }
+
+```
+for(key in map.keys()) {
+  map.remove(key);
+}
+```
+
 # key-value -- Get (Value for Key)
 
 Returns the entry for the given key, or null if it doesn't exist.
@@ -54,8 +62,12 @@ Lets you perform logic on each item in the map. Use the embedded `item` block to
 
 ```
 //loop over keys
-$blockCode([for-each-map 0])
+for(item in map.keys()) {
+  [ACTION]
+}
 
 //loop over values
-$blockCode([for-each-map 1])
+for(item in map) {
+  [ACTION]
+}
 ```

@@ -18,7 +18,7 @@
 			<block tag="true, false" />
 			
 			<!-- Comparisons -->
-			<header title="@cat.flow.cond.comp" />
+			<header id="flow.conditions.comparisons" title="@cat.flow.cond.comp" />
 			<block tag="eq, noteq" />
 			<spacer />
 			<block tag="less, lesseq" />
@@ -81,7 +81,7 @@
 			<block tag="comment-wrapper" />
 			
 			<!-- Drawing -->
-			<header title="@cat.flow.debug.draw" />
+			<header id="flow.debug.draw" title="@cat.flow.debug.draw" />
 			<block tag="debug-draw" />
 			
 		</section>
@@ -396,7 +396,7 @@
 			<block tag="scenename" />
 			
 			<!-- Tiles -->
-			<header title="@cat.scene.props.tiles" />
+			<header id="scene.world.tiles" title="@cat.scene.props.tiles" />
 			<block tag="tile-wh" />
 			<block tag="tile-coord-at" />
 			<block tag="set-tile-at2" />
@@ -413,7 +413,7 @@
 		<!-- View -->
 		<section id="scenes.view" title="@cat.scene.view">
 
-			<!-- Screen -->
+			<!-- Screen Bounds -->
 			<header title="@cat.scene.view.screen" />
 			<block tag="screen-xy, screen-wh" />
 			<block tag="safe-area-insets" />
@@ -641,7 +641,7 @@
 			<button text="@att.show" action="settings:library.attributes" />
 
 			<!-- Dynamic Game Attributes -->
-			<header title="@att.getset" />
+			<header id="attributes.game.dynamic" title="@att.getset" />
 			<block tag="get-game-att" />
 			<block tag="set-game-att" />
 
@@ -1138,7 +1138,7 @@
 			<block tag="get-length-channel" />
 			
 			<!-- Sounds -->
-			<header title="@cat.sound.sound" />
+			<header id="sounds.sound.sounds" title="@cat.sound.sound" />
 			<block tag="get-length-sound" />
 			<block tag="text-to-sound" />
 			
@@ -1192,7 +1192,7 @@
 			<block tag="return" />
 		
 			<!-- Custom Blocks -->
-			<header title="@cat.message.byob" />
+			<header id="custom.custom.listing" title="@cat.message.byob" />
 			<label text="@cat.message.byob.i" />
 
 			<blocklist source="custom-blocks" />

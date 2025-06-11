@@ -39,7 +39,7 @@ Converts from rectangular to polar coordinates. The return value is in radians.
 
 #### Example: Point Actor Towards Mouse
 
-``` { .design-mode img="atan2-example.png" }
+```design-mode { alt="atan2 example" img="atan2-example.png" }
 [step]
   [comment-short "Initial angle depends on the direction the actor sprite is facing."]
   [initlocal vd:{type:"number",name:"initialAngle",label:"initial angle"} 90]

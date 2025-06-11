@@ -58,6 +58,8 @@ Returns the current playback position of the sound on the specified channel in m
 
 Returns the length of the sound on the specified channel in milliseconds.
 
+# palette.sounds.sound.sounds -- ""
+
 # get-length-sound -- Length of Sound
 
 Returns the length of the specified sound in milliseconds.

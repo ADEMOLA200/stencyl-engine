@@ -12,6 +12,8 @@ Lets you create a regular [Custom Block]($pedia/creating-custom-blocks/).
 
 Lets you create a global (static) [Custom Block]($pedia/creating-custom-blocks/).
 
+# events.advanced.custom-code -- Custom Code
+
 # event-custom-code -- Arbitrary Code
 
 Not an event. Lets you insert arbitrary code into your behavior at the "class" level. You could use this to define functions or add class-level fields, for example. Use code blocks within this wrapper.

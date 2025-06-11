@@ -12,9 +12,9 @@ If the save operation succeeds, the embedded `save succeeded` block will return 
 
 #### Example
 
-``` { .design-mode img="save-succeeded-example.png" }
+```design-mode { alt="save succeeded example" img="save-succeeded-example.png" }
 [save-game]
-  [if [save-succeeded]]
+  [if [save-success]]
     [print "Saved game!"]
   [else]
     [print "Could not save the game"]

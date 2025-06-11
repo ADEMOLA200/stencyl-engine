@@ -16,21 +16,23 @@ Returns `true` if the actor's [top/left/bottom/right] side was hit. If the colli
 
 { images }
 
-$blockImage([collision-top 0]) $blockImage([collision-left 0])<br/>
-$blockImage([collision-bottom 0]) $blockImage([collision-right 0])
+$blockImage([collision-top 0 0])
+$blockImage([collision-left 0 0])<br/>
+$blockImage([collision-bottom 0 0])
+$blockImage([collision-right 0 0])
 
 { code }
 
 ```
-$blockCode([collision-top 0])
-$blockCode([collision-left 0])
-$blockCode([collision-bottom 0])
-$blockCode([collision-right 0])
+$blockCode([collision-top 0 0])
+$blockCode([collision-left 0 0])
+$blockCode([collision-bottom 0 0])
+$blockCode([collision-right 0 0])
 
-$blockCode([collision-top 1])
-$blockCode([collision-left 1])
-$blockCode([collision-bottom 1])
-$blockCode([collision-right 1])
+$blockCode([collision-top 0 1])
+$blockCode([collision-left 0 1])
+$blockCode([collision-bottom 0 1])
+$blockCode([collision-right 0 1])
 ```
 
 # collision-shape-group2 -- Group of Colliding Shape
@@ -40,3 +42,12 @@ Returns the group of the shape for the "other" (or "second") object in the colli
 # collision-type2 -- Hit an Actor / Terrain / Tile / Sensor
 
 Returns `true` if the "other" (or "second") object in the collision was an [actor / terrain region / tile / sensor].
+
+{ code }
+
+```
+$blockCode([collision-type2 0 0 0])
+$blockCode([collision-type2 0 0 1])
+$blockCode([collision-type2 0 0 2])
+$blockCode([collision-type2 0 0 3])
+```

@@ -78,6 +78,13 @@ Add a new background layer. Provide the name, the name of the Background resourc
 
 Add a new background layer using an image. Provide the image, name and drawing order (z-order). 0 is the back, higher numbers display on top.
 
+{ code }
+
+```
+addBackgroundFromImage([IMAGE], true, [TEXT], [INT]); //tiled background
+addBackgroundFromImage([IMAGE], false, [TEXT], [INT]); //regular background
+```
+
 # remove-layer -- Remove Layer
 
 Remove the specified layer. The behavior of objects that still exist on this layer when it is removed is unspecified.
@@ -96,4 +103,12 @@ Returns the number of layers in the current scene.
 
 # offscreen -- Set Offscreen Bounds
 
-Used to set how far actors have to be off-screen to be considered off screen.
+Used to set how far actors have to be off-screen to be considered off screen. Applies only to the current scene.
+
+{ notes }
+
+To preserve the offscreen bounds across all scenes, set the following Engine property:
+
+```haxe
+Engine.preservePadding = true;
+```

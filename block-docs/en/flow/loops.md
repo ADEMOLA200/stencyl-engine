@@ -6,11 +6,12 @@ Repeats the wrapped blocks a given number of times. The embedded `current loop c
 
 #### Example
 
-``` { .design-mode img="flow-loop-example1.png" }
+```design-mode { alt="loop count example" img="flow-loop-example1.png" }
 [initlocal def:{name:"number",label:"Number",type:"number"} 5]
 [repeat [getlocal-number]]
   [print [loopindex]]
 ```
+
 Prints out [0 1 2 3 4].
 
 # while -- While Loop
@@ -25,7 +26,7 @@ Runs the wrapped blocks while the given condition is `false`. If the condition i
 
 #### Example
 
-``` { .design-mode img="flow-loop-fibonacci.png" }
+```design-mode { alt="repeat example" img="flow-loop-fibonacci.png" }
 [initlocal def:{name:"previous",label:"Previous",type:"number"} 1]
 [initlocal def:{name:"current",label:"Current",type:"number"} 1]
 [repeatu [more [getlocal-current] 10]]
@@ -59,11 +60,11 @@ Skips the rest of the code for an iteration of the loop and proceeds to the next
 
 #### Example
 
-``` { .design-mode img="flow-loop-example2.png" }
+```design-mode { alt="return example" img="flow-loop-example2.png" }
 [initlocal def:{name:"number",label:"Number",type:"number"} 0]
 [repeat [less [getlocal-number] 10]]
   [setlocal-number [plus [getlocal-number] 1]]
-  [if [eq [remainder [getlocal-number] 2] 0]]
+  [if [eq [mod [getlocal-number] 2] 0]]
     [continue]
   [print [getlocal-number]]
 ```

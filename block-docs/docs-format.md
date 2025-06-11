@@ -31,7 +31,7 @@ $blockCode([blocktag])
 
 #### Example
 
-``` { .design-mode img="blocktag-example.png" }
+```design-mode { alt="alt text" img="blocktag-example.png" }
 [if [true]]
   [blocktag]
 ```
@@ -52,7 +52,7 @@ $blockCode([blocktag])
 
 #### Example
 
-``` { .design-mode img="blocktag-example.png" }
+```design-mode { alt="alt text" img="blocktag-example.png" }
 [if [true]]
   [blocktag]
 ```
@@ -62,7 +62,7 @@ After the sections have been layed out, special symbols will be processed:
 - `$pedia` -> replaced with the root url of stencylpedia
 - `$blockImage(__)` -> replaced with an image of a single block, suitable for use inline with text or in tables
 - `$blockCode(__)` -> replaced with the generated code of a single block, suitable for use within code fences
-- ` { .design-mode img="___"} ` -> specifies a code fence as containing design mode code, which will be replaced by an image of the equivalent design mode blocks. The image will contain the source within the code fence as metadata, so it can be copied into Stencyl.
+- `design-mode { img="___"} ` -> specifies a code fence as containing design mode code, which will be replaced by an image of the equivalent design mode blocks. The image will contain the source within the code fence as metadata, so it can be copied into Stencyl.
 
 
 # Combined Blocks

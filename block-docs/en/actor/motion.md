@@ -34,6 +34,13 @@ Sets the turning speed (angular velocity) of the actor (in degrees). Positive tu
 
 Enables or disables gravity for this actor.
 
+{ code }
+
+```
+[ACTOR].setIgnoreGravity(false); //enable gravity
+[ACTOR].setIgnoreGravity(true); //disable gravity
+```
+
 # toggle-rot -- Toggle Rotation
 
 Enables or disableds rotation for this actor. 

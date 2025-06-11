@@ -32,7 +32,7 @@
         </choices>
     </dropdown>
 
-    <dropdown id="allPlatforms">
+    <dropdown id="allPlatforms" docAttrType="PLATFORM">
         <choices>
             <c text="@plaf.flash" code="flash" />
             <c text="@plaf.html5" code="html5" />
@@ -47,7 +47,7 @@
         </choices>
     </dropdown>
 
-    <dropdown id="easing">
+    <dropdown id="easing" docAttrType="EASING">
         <choices>
             <c text="@easing.none" code="Easing.linear" />
             <c text="@easing.backin" code="Easing.backIn" />
@@ -348,7 +348,7 @@
         </choices>
     </dropdown>
 
-    <dropdown id="blend">
+    <dropdown id="blend" docAttrType="BLEND MODE">
         <choices>
             <c text="@blend.add" code="BlendMode.ADD" />
             <c text="@blend.alpha" code="BlendMode.ALPHA" />
@@ -822,7 +822,7 @@
 
     <dropdown id="degreesRadiansInline">
         <choices>
-            <c text="@degrees" code="* Utils.RAD" />
+            <c text="@degrees" code=" * Utils.RAD" />
             <c text="@radians" code="" />
         </choices>
     </dropdown>
@@ -4877,7 +4877,7 @@
     </block>
 
     <block tag="actors-in-group"
-           code="for(actorInGroup in cast(#{0}, Group).list)&#10;{&#10;if(actorInGroup != null &amp;&amp; !actorInGroup.dead &amp;&amp; !actorInGroup.recycled){&#10;#{1}&#10;}&#10;}"
+           code="for(actorInGroup in #{0}.list)&#10;{&#10;if(actorInGroup != null &amp;&amp; !actorInGroup.dead &amp;&amp; !actorInGroup.recycled){&#10;#{1}&#10;}&#10;}"
            spec="@scene.group.foreach"
            help="@scene.group.foreach.help"
            type="wrapper"
@@ -6979,7 +6979,7 @@
     </block>
 
     <block tag="trig-master"
-           code="Math.#{0}(#{1} #{2})"
+           code="Math.#{0}(#{1}#{2})"
            spec="@num.trig"
            help="@num.trig.help"
            type="normal"

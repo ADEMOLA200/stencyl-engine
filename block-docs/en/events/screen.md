@@ -1,3 +1,5 @@
+# events.screen.screen -- ""
+
 # event-screen-fullscreen -- Fullscreen State Changed
 
 Triggers when the game enters or exists fullscreen mode.

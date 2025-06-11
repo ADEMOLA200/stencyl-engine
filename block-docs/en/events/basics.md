@@ -1,3 +1,5 @@
+# events.basics.basics -- ""
+
 # init -- When Creating
 
 Happens just once -- when this behavior is first initialized. For an actor, this happens when the actor is created. For a scene, this happens when you enter the scene.

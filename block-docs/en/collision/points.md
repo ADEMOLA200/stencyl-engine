@@ -16,3 +16,10 @@ Returns the text associated with the tile you collided with. Must be used within
 # tile-position-for-collision -- Get Position for Collided Tile
 
 Returns the column or row of the collided tile.
+
+{ code }
+
+```
+$blockCode([tile-position-for-collision 0]) //column
+$blockCode([tile-position-for-collision 1]) //row
+```

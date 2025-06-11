@@ -14,6 +14,13 @@ Spins (rotates) the actor [by / to] the given amount in degrees over the specifi
 
 Fades the actor [in / out] over the specified time. This means that its opacity will either go to 100% (fade in) or 0% (fade out).
 
+{ code }
+
+```
+[ACTOR].fadeTo(1, [NUMBER], [EASING]); //fade in
+[ACTOR].fadeTo(0, [NUMBER], [EASING]); //fade out
+```
+
 # fadeTo -- Fade To
 
 Sets the actor's opacity to the given amount (in percent) over the specified time. Amount must be between [0 - 100] inclusive.

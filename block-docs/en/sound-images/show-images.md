@@ -10,9 +10,23 @@ Creates an Image Instance from the given image. Usually assigned to an attribute
 
 Attaches the image instance to the specified actor at the given position.
 
+{ code }
+
+```
+$blockCode([image-inst-actor "" "" 0 0 0]) // front
+$blockCode([image-inst-actor "" "" 0 0 1]) // behind
+```
+
 # image-inst-layer2 -- Attach Image Instance to Layer
 
 Attaches the image instance to the specified layer (via ID or name) at the given position.
+
+{ code }
+
+```
+$blockCode([image-inst-layer2 "" 0 0 0 0 0]) // front
+$blockCode([image-inst-layer2 "" 0 0 0 0 1]) // behind
+```
 
 # image-inst-hud -- Attach Image Instance to Screen
 

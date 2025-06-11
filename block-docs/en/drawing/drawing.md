@@ -18,7 +18,7 @@ Draws the specified actor's image to the current pen position. Will base this up
 
 #### Example
 
-``` { .design-mode img="draw-image-actor-example.png" }
+```design-mode { alt="draw image for actor example" img="draw-image-actor-example.png" }
 [draw]
   [draw-transtoby 0 25 0]
   [draw-image-actor c:this]
@@ -48,10 +48,10 @@ Draws an outline of (or fills) a polygon at the specified position, using the cu
 
 ```
 //draw
-${blockCode([drawfill-poly 0])}
+$blockCode([drawfill-poly 0])
 
 //fill
-${blockCode([drawfill-poly 1])}
+$blockCode([drawfill-poly 1])
 ```
 
 # add-to-poly -- Add Point to Polygon

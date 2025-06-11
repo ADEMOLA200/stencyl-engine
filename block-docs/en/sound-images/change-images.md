@@ -6,6 +6,12 @@
 
 Draws the first image on top of the second image at the specified location.
 
+{ code }
+
+```
+drawImageOnImage([IMAGE], [IMAGE], [INT], [INT], [BLEND MODE]);
+```
+
 # image-draw-text -- Draw Text onto Image
 
 Draws the given text (using a font) on top of the image at the specified location.

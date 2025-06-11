@@ -2,6 +2,14 @@
 
 Runs the code after the given delay (in seconds, can be partial seconds).
 
+{ code }
+
+```
+runLater(1000 * [NUMBER], function(task:TimedTask):Void {
+  [ACTIONS]
+}, [ACTOR]); //the actor this timed task is bound to, or null
+```
+
 { notes }
 
 > **Warning:** Do not use this block in a `when updating` event, unless constrained by an `if` block or other conditional.
@@ -10,13 +18,21 @@ Runs the code after the given delay (in seconds, can be partial seconds).
 
 Runs the code every [N] seconds (can be partial seconds).
 
+{ code }
+
+```
+runPeriodically(1000 * [NUMBER], function(task:TimedTask):Void {
+  [ACTIONS]
+}, [ACTOR]); //the actor this timed task is bound to, or null
+```
+
 { notes }
 
 > **Warning:** Do not use this block in a `when updating` event, unless constrained by an `if` block or other conditional.
 
 #### Example
 
-``` { .design-mode img="periodic-example-2.png" }
+```design-mode { alt="periodic example" img="periodic-example-2.png" }
 [init]
   [periodic 2]
     [toggle-image c:this 1]

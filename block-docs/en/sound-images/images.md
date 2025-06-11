@@ -24,6 +24,8 @@ Returns the specified part of the image as a new image.
 
 Returns a larger (or smaller) copy of the image. Width and height are given as percentages - 100% means keep it the same, 200% means double, 50% means half.
 
+{ code }
+
 ```
 //Smoothing
 $blockCode([image-resize "" 0 0 0])

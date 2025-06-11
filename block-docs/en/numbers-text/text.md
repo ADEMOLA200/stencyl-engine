@@ -18,17 +18,25 @@ Returns the number of characters in the given text.
 
 Combines the two given pieces of text into one and returns that result.
 
+{ code }
+
+```
+[TEXT] + [TEXT]
+```
+
 # str-trim -- Trim Text
 
 Removes spaces from the beginning and the end of the given text and returns that result. (When given an attribute, the value of the attribute remains unchanged.)
 
-# eq -- Equals (Text)
-
-Returns `true` if both pieces of text are exactly the same.
-
 # str-empty -- Is Text Empty?
 
 Returns `true` if the length of the given text is 0.
+
+{ code }
+
+```
+[TEXT] == ""
+```
 
 # str-beforeafter -- Does Text come before/after?
 
@@ -38,10 +46,10 @@ Returns `true` if the first given text alphabetically comes before (or after) th
 
 ```
 //A comes BEFORE B
-$blockCode([str-beforeafter "", "", 0])
+$blockCode([str-beforeafter "" "" 0])
 
 //A comes AFTER B
-$blockCode([str-beforeafter "", "", 1])
+$blockCode([str-beforeafter "" "" 1])
 ```
 
 # str-char-at -- Find Character
@@ -59,7 +67,7 @@ Returns the index at which the given phrase (or character) appears in the given 
 Replaces one phrase with another within the given text.
 
 > **Example:**
-> ``` { .design-mode img="str-replace-example.png" }
+> ```design-mode { alt="replace example" img="str-replace-example.png" }
 > [str-replace "ham" "cheese" "hamburger"]
 > ```
 > Returns `cheeseburger`
@@ -81,11 +89,3 @@ Splits the given text up into a [list]($pedia/lists/), using **space** as the se
 # str-split -- Split using Separator
 
 Splits the given text up into a [list]($pedia/lists/), using the given separator (delimiter) text.
-
-# get-font-width2-new -- Get Width of Text using Font
-
-Returns the width of the given text using the given font. Useful for calculating positions for drawing text.
-
-# get-font-height2-new -- Get Height of Font
-
-Returns the height of the given font. Useful for calculating positions for drawing text.

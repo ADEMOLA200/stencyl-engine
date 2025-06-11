@@ -10,7 +10,7 @@ Use directly below an "If" block. If the condition in the preceding "If" block i
 
 Use directly below an "If" block. If the condition in the preceding "If" block is `false`, and the condition of this wrapper is `true`, the blocks wrapped inside the "Otherwise If" block will execute. Equivalent to doing the following:
 
-``` { .design-mode img="otherwise-if-equivalent.png" }
+```design-mode { alt="otherwise if equivalent" img="otherwise-if-equivalent.png" }
 [else]
   [if ""]
 ```
@@ -35,6 +35,8 @@ Returns `true` if the condition resolves to `false`. Testing `if not [CONDITION]
 
 Literal values of `true` and `false`.
 
+# palette.flow.conditions.comparisons -- Equality
+
 # eq -- Equals
 
 Returns `true` if both values are equal.
@@ -42,6 +44,12 @@ Returns `true` if both values are equal.
 # noteq -- Not Equal
 
 Returns `true` if the values are not equal.
+
+{ code }
+
+```
+[VALUE] != [VALUE]
+```
 
 # less,lesseq,more,moreeq -- Comparators
 
@@ -53,6 +61,8 @@ $blockImage([less 0 0])|First number is smaller than second number.
 $blockImage([lesseq 0 0])|First number is smaller than or equal to than second number.
 $blockImage([more 0 0])|First number is larger than second number.
 $blockImage([moreeq 0 0])|First number is larger than or equal to second number.
+
+{ images }
 
 # as-boolean -- Boolean Conversion
 
