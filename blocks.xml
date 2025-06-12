@@ -405,9 +405,9 @@
 
     <dropdown id="allDevices">
         <choices>
-            <c id="ios.standard" text="@ios.standard" code="Engine.isStandardIOS" />
-            <c id="ios.extended" text="@ios.extended" code="Engine.isExtendedIOS" />
-            <c id="ios.tablet" text="@ios.tablet" code="Engine.isTabletIOS" />
+            <c id="ios_standard" text="@ios.standard" code="Engine.isStandardIOS" />
+            <c id="ios_extended" text="@ios.extended" code="Engine.isExtendedIOS" />
+            <c id="ios_tablet" text="@ios.tablet" code="Engine.isTabletIOS" />
         </choices>
     </dropdown>
 
@@ -499,10 +499,10 @@
     <dropdown id="throughTransitions">
         <choices>
             <c id="crossfade" text="@transition.crossfade" code="createCrossfadeTransition" />
-            <c id="slide.up" text="@transition.slide.up" code="createSlideUpTransition" />
-            <c id="slide.down" text="@transition.slide.down" code="createSlideDownTransition" />
-            <c id="slide.left" text="@transition.slide.left" code="createSlideLeftTransition" />
-            <c id="slide.right" text="@transition.slide.right" code="createSlideRightTransition" />
+            <c id="slide_up" text="@transition.slide.up" code="createSlideUpTransition" />
+            <c id="slide_down" text="@transition.slide.down" code="createSlideDownTransition" />
+            <c id="slide_left" text="@transition.slide.left" code="createSlideLeftTransition" />
+            <c id="slide_right" text="@transition.slide.right" code="createSlideRightTransition" />
         </choices>
     </dropdown>
 
@@ -542,8 +542,8 @@
         <choices>
             <c id="x" text="@x" code="x" />
             <c id="y" text="@y" code="y" />
-            <c id="normal.x" text="@collision.normal.x" code="normalX" />
-            <c id="normal.y" text="@collision.normal.y" code="normalY" />
+            <c id="normal_x" text="@collision.normal.x" code="normalX" />
+            <c id="normal_y" text="@collision.normal.y" code="normalY" />
         </choices>
     </dropdown>
 
@@ -566,10 +566,10 @@
 
     <dropdown id="sceneWidthHeight">
         <choices>
-            <c id="width.pixels" text="@scene.scenewh.wp" code="getSceneWidth()" />
-            <c id="height.pixels" text="@scene.scenewh.hp" code="getSceneHeight()" />
-            <c id="width.tiles" text="@scene.scenewh.wt" code="Std.int(getSceneWidth()/getTileWidth())" />
-            <c id="height.tiles" text="@scene.scenewh.ht" code="Std.int(getSceneHeight()/getTileHeight())" />
+            <c id="width_pixels" text="@scene.scenewh.wp" code="getSceneWidth()" />
+            <c id="height_pixels" text="@scene.scenewh.hp" code="getSceneHeight()" />
+            <c id="width_tiles" text="@scene.scenewh.wt" code="Std.int(getSceneWidth()/getTileWidth())" />
+            <c id="height_tiles" text="@scene.scenewh.ht" code="Std.int(getSceneHeight()/getTileHeight())" />
         </choices>
     </dropdown>
 
@@ -598,8 +598,8 @@
 
     <dropdown id="inputHover">
         <choices>
-            <c id="hover.yes" text="@in.hover.yes" code="" />
-            <c id="hover.no" text="@in.hover.no" code="!" />
+            <c id="hover_yes" text="@in.hover.yes" code="" />
+            <c id="hover_no" text="@in.hover.no" code="!" />
         </choices>
     </dropdown>
 
@@ -627,11 +627,11 @@
     <dropdown id="outTransitions">
         <choices>
             <c id="fadeout" text="@transition.fadeout" code="createFadeOut" />
-            <c id="blinds.out" text="@transition.blinds.out" code="createBlindsOut" />
-            <c id="bubbles.out" text="@transition.bubbles.out" code="createBubblesOut" />
-            <c id="circle.out" text="@transition.circle.out" code="createCircleOut" />
-            <c id="pixel.out" text="@transition.pixel.out" code="createPixelizeOut" />
-            <c id="box.out" text="@transition.box.out" code="createRectangleOut" />
+            <c id="blinds_out" text="@transition.blinds.out" code="createBlindsOut" />
+            <c id="bubbles_out" text="@transition.bubbles.out" code="createBubblesOut" />
+            <c id="circle_out" text="@transition.circle.out" code="createCircleOut" />
+            <c id="pixel_out" text="@transition.pixel.out" code="createPixelizeOut" />
+            <c id="box_out" text="@transition.box.out" code="createRectangleOut" />
         </choices>
     </dropdown>
 
@@ -677,10 +677,10 @@
         <choices>
             <c id="x" text="@x" code="X" />
             <c id="y" text="@y" code="Y" />
-            <c id="x.center" text="@xc" code="XCenter" />
-            <c id="y.center" text="@yc" code="YCenter" />
-            <c id="x.screen" text="@xscreen" code="ScreenX" />
-            <c id="y.screen" text="@yscreen" code="ScreenY" />
+            <c id="x_center" text="@xc" code="XCenter" />
+            <c id="y_center" text="@yc" code="YCenter" />
+            <c id="x_screen" text="@xscreen" code="ScreenX" />
+            <c id="y_screen" text="@yscreen" code="ScreenY" />
         </choices>
     </dropdown>
 
@@ -701,18 +701,18 @@
     <dropdown id="inTransitions">
         <choices>
             <c id="fadein" text="@transition.fadein" code="createFadeIn" />
-            <c id="blinds.in" text="@transition.blinds.in" code="createBlindsIn" />
-            <c id="bubbles.in" text="@transition.bubbles.in" code="createBubblesIn" />
-            <c id="circle.in" text="@transition.circle.in" code="createCircleIn" />
-            <c id="pixel.in" text="@transition.pixel.in" code="createPixelizeIn" />
-            <c id="box.in" text="@transition.box.in" code="createRectangleIn" />
+            <c id="blinds_in" text="@transition.blinds.in" code="createBlindsIn" />
+            <c id="bubbles_in" text="@transition.bubbles.in" code="createBubblesIn" />
+            <c id="circle_in" text="@transition.circle.in" code="createCircleIn" />
+            <c id="pixel_in" text="@transition.pixel.in" code="createPixelizeIn" />
+            <c id="box_in" text="@transition.box.in" code="createRectangleIn" />
         </choices>
     </dropdown>
 
     <dropdown id="collisionHit">
         <choices>
-            <c id="hit.yes" text="@collision.hit.yes" code="" />
-            <c id="hit.no" text="@collision.hit.no" code="!" />
+            <c id="hit_yes" text="@collision.hit.yes" code="" />
+            <c id="hit_no" text="@collision.hit.no" code="!" />
         </choices>
     </dropdown>
 
@@ -784,8 +784,8 @@
         <choices>
             <c id="x" text="@x" code="X" />
             <c id="y" text="@y" code="Y" />
-            <c id="x.center" text="@xc" code="XCenter" />
-            <c id="y.center" text="@yc" code="YCenter" />
+            <c id="x_center" text="@xc" code="XCenter" />
+            <c id="y_center" text="@yc" code="YCenter" />
         </choices>
     </dropdown>
 
