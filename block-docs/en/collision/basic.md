@@ -16,23 +16,23 @@ Returns `true` if the actor's [top/left/bottom/right] side was hit. If the colli
 
 { images }
 
-$blockImage([collision-top 0 0])
-$blockImage([collision-left 0 0])<br/>
-$blockImage([collision-bottom 0 0])
-$blockImage([collision-right 0 0])
+$blockImage([collision-top d:"hit_yes" d:this])
+$blockImage([collision-left d:"hit_yes" d:this])<br/>
+$blockImage([collision-bottom d:"hit_yes" d:this])
+$blockImage([collision-right d:"hit_yes" d:this])
 
 { code }
 
 ```
-$blockCode([collision-top 0 0])
-$blockCode([collision-left 0 0])
-$blockCode([collision-bottom 0 0])
-$blockCode([collision-right 0 0])
+$blockCode([collision-top d:"hit_yes" d:this])
+$blockCode([collision-left d:"hit_yes" d:this])
+$blockCode([collision-bottom d:"hit_yes" d:this])
+$blockCode([collision-right d:"hit_yes" d:this])
 
-$blockCode([collision-top 0 1])
-$blockCode([collision-left 0 1])
-$blockCode([collision-bottom 0 1])
-$blockCode([collision-right 0 1])
+$blockCode([collision-top d:"hit_yes" d:other])
+$blockCode([collision-left d:"hit_yes" d:other])
+$blockCode([collision-bottom d:"hit_yes" d:other])
+$blockCode([collision-right d:"hit_yes" d:other])
 ```
 
 # collision-shape-group2 -- Group of Colliding Shape
@@ -46,8 +46,8 @@ Returns `true` if the "other" (or "second") object in the collision was an [acto
 { code }
 
 ```
-$blockCode([collision-type2 0 0 0])
-$blockCode([collision-type2 0 0 1])
-$blockCode([collision-type2 0 0 2])
-$blockCode([collision-type2 0 0 3])
+$blockCode([collision-type2 d:active d:this d:actor])
+$blockCode([collision-type2 d:active d:this d:terrain])
+$blockCode([collision-type2 d:active d:this d:tile])
+$blockCode([collision-type2 d:active d:this d:sensor])
 ```

@@ -46,10 +46,10 @@ Returns `true` if the first given text alphabetically comes before (or after) th
 
 ```
 //A comes BEFORE B
-$blockCode([str-beforeafter "" "" 0])
+$blockCode([str-beforeafter "" "" d:before])
 
 //A comes AFTER B
-$blockCode([str-beforeafter "" "" 1])
+$blockCode([str-beforeafter "" "" d:after])
 ```
 
 # str-char-at -- Find Character

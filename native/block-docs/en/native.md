@@ -9,7 +9,7 @@ View our article on [Mobile Keyboards]($pedia/mobile-features/) for further deta
 Immediately shows or hides the [virtual keyboard]($pedia/mobile-features/). Use mobile keyboard events to track what's been typed.
 
 ```design-mode { img="keyboard-text-example.png" }
-[event-mobile-keyboard 0]
+[event-mobile-keyboard d:typed]
   [set-game-att "highScoreName" [mobile-keyboard-text]]
 ```
 

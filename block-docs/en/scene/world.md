@@ -27,8 +27,8 @@ Converts a coordinate from pixels (real location) to tiles. In other words, divi
 { code }
 
 ```
-$blockCode([tile-coord-at 0 0]) //x coordinate
-$blockCode([tile-coord-at 1 0]) //y coordinate
+$blockCode([tile-coord-at d:column 0]) //x coordinate
+$blockCode([tile-coord-at d:row 0]) //y coordinate
 ```
 
 # set-tile-at2 -- Set a Tile

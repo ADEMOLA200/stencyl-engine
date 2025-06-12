@@ -35,9 +35,9 @@ runPeriodically(1000 * [NUMBER], function(task:TimedTask):Void {
 ```design-mode { alt="periodic example" img="periodic-example-2.png" }
 [init]
   [periodic 2]
-    [toggle-image c:this 1]
+    [toggle-image c:this d:hide]
     [periodic 1]
-      [toggle-image c:this 0]
+      [toggle-image c:this d:show]
 ```
 
 `do after n seconds` and `do every n seconds` can be combined together. In this example, we implement a "blinking" effect by alternating the actor between hidden and not-hidden, without relying on a variable to store state.

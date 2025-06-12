@@ -14,7 +14,7 @@ Comments let you mark up your behaviors. They are like sticky notes. They have n
 
 { images }
 
-$blockImage([comment-short "text"])<br/>
+$blockImage([comment-short text])<br/>
 $blockImage([comment-long ""])
 
 { code }

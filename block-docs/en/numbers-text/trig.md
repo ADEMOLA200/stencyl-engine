@@ -18,17 +18,17 @@ Returns the result of applying a trigonometric function to the given number. Dro
 
 ```
 //Incoming number is Degrees
-$blockCode([trig-master 0 0 0])
+$blockCode([trig-master d:sin 0 d:degrees])
 
 //Incoming number is Radians
-$blockCode([trig-master 0 0 1])
+$blockCode([trig-master d:sin 0 d:radians])
 
 //Other operations
-$blockCode([trig-master 1 0 1])
-$blockCode([trig-master 2 0 1])
-$blockCode([trig-master 3 0 1])
-$blockCode([trig-master 4 0 1])
-$blockCode([trig-master 5 0 1])
+$blockCode([trig-master d:cos 0 d:radians])
+$blockCode([trig-master d:tan 0 d:radians])
+$blockCode([trig-master d:asin 0 d:radians])
+$blockCode([trig-master d:acos 0 d:radians])
+$blockCode([trig-master d:atan 0 d:radians])
 ```
 
 # atan2 -- Inverse Tangent
@@ -42,10 +42,10 @@ Converts from rectangular to polar coordinates. The return value is in radians.
 ```design-mode { alt="atan2 example" img="atan2-example.png" }
 [step]
   [comment-short "Initial angle depends on the direction the actor sprite is facing."]
-  [initlocal vd:{type:"number",name:"initialAngle",label:"initial angle"} 90]
-  [initlocal vd:{type:"number",name:"x",label:"x"} [minus [mousexy 0 0] [get-xy c:this 2]]]
-  [initlocal vd:{type:"number",name:"y",label:"y"} [minus [mousexy 0 1] [get-xy c:this 3]]]
-  [initlocal vd:{type:"number",name:"angle",label:"angle"} [to-degreesradians 0 [atan2 [getlocal-y] [getlocal-x]]]]
+  [initlocal vd:{type:number,name:initialAngle,label:"initial angle"} 90]
+  [initlocal vd:{type:number,name:x,label:x} [minus [mousexy d:hoverloc d:x] [get-xy c:this d:x.center]]]
+  [initlocal vd:{type:number,name:y,label:y} [minus [mousexy d:hoverloc d:y] [get-xy c:this d:y.center]]]
+  [initlocal vd:{type:number,name:angle,label:angle} [to-degreesradians d:degrees [atan2 [getlocal-y] [getlocal-x]]]]
   [setangle c:this [plus [getlocal-angle] [getlocal-initialAngle]]]
 ```
 

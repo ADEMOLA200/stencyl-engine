@@ -28,10 +28,10 @@ Returns a larger (or smaller) copy of the image. Width and height are given as p
 
 ```
 //Smoothing
-$blockCode([image-resize "" 0 0 0])
+$blockCode([image-resize "" 0 0 d:smoothing])
 
 //No Smoothing
-$blockCode([image-resize "" 0 0 1])
+$blockCode([image-resize "" 0 0 d:nosmoothing])
 ```
 
 # image-screen -- Current Screen as Image

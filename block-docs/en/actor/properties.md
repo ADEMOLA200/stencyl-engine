@@ -75,8 +75,8 @@ Sets the collision shape to be solid or a sensor (not solid but still can detect
 { code }
 
 ```
-$blockCode([shape-sensorsolid2 0 ""]) //Make it a sensor
-$blockCode([shape-sensorsolid2 1 ""]) //Make it solid
+$blockCode([shape-sensorsolid2 d:sensor ""]) //Make it a sensor
+$blockCode([shape-sensorsolid2 d:solid ""]) //Make it solid
 ```
 
 # shape-destroy2 -- Remove Collision Shape

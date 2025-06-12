@@ -20,6 +20,6 @@ Returns the column or row of the collided tile.
 { code }
 
 ```
-$blockCode([tile-position-for-collision 0]) //column
-$blockCode([tile-position-for-collision 1]) //row
+$blockCode([tile-position-for-collision d:column]) //column
+$blockCode([tile-position-for-collision d:row]) //row
 ```
