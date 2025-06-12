@@ -7,7 +7,7 @@ Repeats the wrapped blocks a given number of times. The embedded `current loop c
 #### Example
 
 ```design-mode { alt="loop count example" img="flow-loop-example1.png" }
-[initlocal vd:{name:"number",label:"Number",type:"number"} 5]
+[initlocal vd:{type:number,name:number,label:Number} 5]
 [repeat [getlocal-number]]
   [print [loopindex]]
 ```
@@ -27,10 +27,10 @@ Runs the wrapped blocks while the given condition is `false`. If the condition i
 #### Example
 
 ```design-mode { alt="repeat example" img="flow-loop-fibonacci.png" }
-[initlocal vd:{name:"previous",label:"Previous",type:"number"} 1]
-[initlocal vd:{name:"current",label:"Current",type:"number"} 1]
+[initlocal vd:{type:number,name:previous,label:Previous} 1]
+[initlocal vd:{type:number,name:current,label:Current} 1]
 [repeatu [more [getlocal-current] 10]]
-  [initlocal vd:{name:"temp",label:"Temp",type:"number"} [getlocal-current]]
+  [initlocal vd:{type:number,name:temp,label:Temp} [getlocal-current]]
   [setlocal-current [plus [getlocal-previous] [getlocal-current]]]
   [setlocal-previous [getlocal-temp]]
   [print [getlocal-current]]
@@ -61,7 +61,7 @@ Skips the rest of the code for an iteration of the loop and proceeds to the next
 #### Example
 
 ```design-mode { alt="return example" img="flow-loop-example2.png" }
-[initlocal vd:{name:"number",label:"Number",type:"number"} 0]
+[initlocal vd:{type:number,name:number,label:Number} 0]
 [repeat [less [getlocal-number] 10]]
   [setlocal-number [plus [getlocal-number] 1]]
   [if [eq [mod [getlocal-number] 2] 0]]

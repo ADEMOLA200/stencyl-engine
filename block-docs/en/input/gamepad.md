@@ -11,10 +11,10 @@ Binds a physical button on the gamepad to a Stencyl [control]($pedia/controls/).
 #### Example (for XBox 360 Controller)
 
 ```design-mode { alt="gamepad mapping example" img="gamepad-mapping-example.png"}
-[map-gamepad-control "0, left hat" "left"]
-[map-gamepad-control "0, right hat" "right"]
-[map-gamepad-control "0, up hat" "up"]
-[map-gamepad-control "0, down hat" "down"]
+[map-gamepad-control "0, left hat" left]
+[map-gamepad-control "0, right hat" right]
+[map-gamepad-control "0, up hat" up]
+[map-gamepad-control "0, down hat" down]
 ```
 
 Read [our guide]($pedia/gamepads/) on Gamepads for an explanation.

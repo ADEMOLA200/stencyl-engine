@@ -68,7 +68,7 @@ Replaces one phrase with another within the given text.
 
 > **Example:**
 > ```design-mode { alt="replace example" img="str-replace-example.png" }
-> [str-replace "ham" "cheese" "hamburger"]
+> [str-replace ham cheese hamburger]
 > ```
 > Returns `cheeseburger`
 

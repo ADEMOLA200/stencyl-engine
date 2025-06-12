@@ -10,7 +10,7 @@ Immediately shows or hides the [virtual keyboard]($pedia/mobile-features/). Use 
 
 ```design-mode { img="keyboard-text-example.png" }
 [event-mobile-keyboard d:typed]
-  [set-game-att "highScoreName" [mobile-keyboard-text]]
+  [set-game-att highScoreName [mobile-keyboard-text]]
 ```
 
 # set-keyboard-text -- Set Keyboard Text
