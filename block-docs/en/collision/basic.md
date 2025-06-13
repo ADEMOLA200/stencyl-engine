@@ -4,7 +4,7 @@
 
 Each block in this section lets you choose between Actor 1 and Actor 2. Collision events involve 2 actors. When the event is reported, the first actor in the event's block corresponds to Actor 1 and the second actor in the block corresponds to Actor 2.
 
-![explained](https://static.stencyl.com/pedia2/blocks/collision/basic/1st2nd.png)
+![explained](1st-2nd.png)
 
 You can refer to Actor 1 and Actor 2 directly using the blocks embedded in the event itself.
 

@@ -26,7 +26,7 @@ Draws the specified actor's image to the current pen position. Will base this up
 
 Draws the following.
 
-![example](https://static.stencyl.com/pedia2/blocks/drawing/drawing/actor_example2.png)
+![example](draw-image-actor-example2.png)
 
 # drawfill-rect -- Draw Rectangle
 
