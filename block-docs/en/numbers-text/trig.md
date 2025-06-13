@@ -43,8 +43,8 @@ Converts from rectangular to polar coordinates. The return value is in radians.
 [step]
   [comment-short "Initial angle depends on the direction the actor sprite is facing."]
   [initlocal vd:{type:number,name:initialAngle,label:"initial angle"} 90]
-  [initlocal vd:{type:number,name:x,label:x} [minus [mousexy d:hoverloc d:x] [get-xy c:this d:x.center]]]
-  [initlocal vd:{type:number,name:y,label:y} [minus [mousexy d:hoverloc d:y] [get-xy c:this d:y.center]]]
+  [initlocal vd:{type:number,name:x,label:x} [minus [mousexy d:hoverloc d:x] [get-xy c:this d:"x_center"]]]
+  [initlocal vd:{type:number,name:y,label:y} [minus [mousexy d:hoverloc d:y] [get-xy c:this d:"y_center"]]]
   [initlocal vd:{type:number,name:angle,label:angle} [to-degreesradians d:degrees [atan2 [getlocal-y] [getlocal-x]]]]
   [setangle c:this [plus [getlocal-angle] [getlocal-initialAngle]]]
 ```

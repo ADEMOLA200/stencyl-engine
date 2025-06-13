@@ -19,12 +19,12 @@ Description of block functionality.
 
 { images }
 
-$blockImage([blocktag])
+$defaultBlockImage(blocktag)
 
 { code }
 
 ```
-$blockCode([blocktag])
+$defaultBlockCode(blocktag)
 ```
 
 { notes }
@@ -42,12 +42,12 @@ This will generate into something like this:
 ````
 ### <a name="blocktag"></a> Label
 
-$blockImage([blocktag])
+$defaultBlockImage(blocktag)
 
 Description of block functionality
 
 ```
-$blockCode([blocktag])
+$defaultBlockCode(blocktag)
 ```
 
 #### Example
@@ -60,10 +60,11 @@ $blockCode([blocktag])
 
 After the sections have been layed out, special symbols will be processed:
 - `$pedia` -> replaced with the root url of stencylpedia
-- `$blockImage(__)` -> replaced with an image of a single block, suitable for use inline with text or in tables
-- `$blockCode(__)` -> replaced with the generated code of a single block, suitable for use within code fences
-- `design-mode { img="___"} ` -> specifies a code fence as containing design mode code, which will be replaced by an image of the equivalent design mode blocks. The image will contain the source within the code fence as metadata, so it can be copied into Stencyl.
-
+- `$blockImage([tag field1 field2])` -> replaced with an image of a single block, suitable for use inline with text or in tables
+- `$blockCode([tag field1 field2])` -> replaced with the generated code of a single block, suitable for use within code fences
+- `$defaultBlockImage(tag)` -> replaced with an image of a single block with default field values
+- `$defaultBlockCode(tag)` -> replaced with the generated code of a single block with default field values
+- `design-mode { alt="alt text" img="img-name.png" } ` -> specifies a code fence as containing design mode code, which will be replaced by an image of the equivalent design mode blocks. The image will contain the source within the code fence as metadata, so it can be copied into Stencyl.
 
 # Combined Blocks
 

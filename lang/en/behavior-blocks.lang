@@ -1315,6 +1315,13 @@ blockfield.default.code=code
 blockfield.default.text=text
 blockfield.default.animation=animation
 blockfield.default.object=anything
+blockfield.default.image=image
+blockfield.default.image-instance=image instance
+blockfield.default.collision-shape=collision shape
+blockfield.default.list=list
+blockfield.default.map=map
+blockfield.default.shader=shader
+blockfield.default.filter=filter
 # Block Picker
 block.picker.actor.motion=Actor Motion
 block.picker.actor.props=Actor Properties

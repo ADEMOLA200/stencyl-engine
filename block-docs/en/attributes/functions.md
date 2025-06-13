@@ -5,7 +5,7 @@ Applies a [tween]($pedia/tweening/) to the given number attribute.
 { code }
 
 ```
-$blockCode([tween-number _ _ _ _])
+$defaultBlockCode(tween-number)
 
 //Or in one line (slower, uses dynamic typing)
 tweenNumber([TEXT], [NUMBER], [NUMBER], [EASING]) //internal name, value, duration (seconds), easing
