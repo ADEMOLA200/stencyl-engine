@@ -185,11 +185,12 @@ class SheetAnimation extends Tile implements AbstractAnimation
 
 			if (g.alpha != 1)
 			{
-				bitmapData = new BitmapData(Std.int(rect.width), Std.int(rect.height), true, 0);
+				var bitmapDataTransparent = new BitmapData(Std.int(rect.width), Std.int(rect.height), true, 0);
 				var colorTransformation = new openfl.geom.ColorTransform(1,1,1,g.alpha,0,0,0,0);
-				bitmapData.draw(model.imgData, new Matrix(1, 0, 0, 1, -srcXOffset, -srcYOffset), colorTransformation);
+				bitmapDataTransparent.draw(bitmapData, new Matrix(1, 0, 0, 1, -srcXOffset, -srcYOffset), colorTransformation);
 				srcXOffset = 0;
 				srcYOffset = 0;
+				bitmapData = bitmapDataTransparent;
 			}
 			
 			g.graphics.beginBitmapFill(bitmapData, new Matrix(1, 0, 0, 1, x - srcXOffset, y - srcYOffset));

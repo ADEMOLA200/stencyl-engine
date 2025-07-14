@@ -53,7 +53,7 @@ class DrawingLayer extends #if use_actor_tilemap Tilemap #else Sprite #end
 		if(Config.drawToLayers)
 		{
 			g.layer = this;
-			g.drawShape(graphics);
+			g.drawShape(shape);
 		}
 		#end
 	}
