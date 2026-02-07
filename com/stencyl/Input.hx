@@ -827,10 +827,6 @@ class Input
 			onJoyHatMove(joystate, hat, position);
 		});
 
-		joystick.onTrackballMove.add (function (trackball:Int, x:Float, y:Float) {
-			onJoyBallMove(joystate, trackball, x, y);
-		});
-
 		joystick.onDisconnect.add (function () {
 			Log.info("Disconnected Joystick: " + joystick.name);
 			_joyState.remove(joystick.id);
@@ -882,11 +878,6 @@ class Input
 		joystate.axisPressure[axis] = value;
 	}
 	
-	private static function onJoyBallMove(joystate:JoystickState, trackball:Int, x:Float, y:Float)
-	{
-		//not sure what to do with this
-	}
-
 	private static function onJoyHatMove(joystate:JoystickState, hat:Int, position:JoystickHatPosition)
 	{
 		var gpid = multipleGamepadsEnabled ? (joystate.joystick.id + ", ") : "";
