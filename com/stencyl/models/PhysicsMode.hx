@@ -1,6 +1,6 @@
 package com.stencyl.models;
 
-@:enum abstract PhysicsMode(Int) from Int to Int
+#if (haxe_ver >= 4.0) enum #else @:enum #end abstract PhysicsMode(Int) from Int to Int
 {
 	public var NORMAL_PHYSICS = 0;
 	public var SIMPLE_PHYSICS = 1;
