@@ -22,6 +22,12 @@ import com.stencyl.utils.ColorMatrix;
 import com.stencyl.utils.Log;
 import com.stencyl.utils.Utils;
 
+#if (haxe_ver >= 4.1)
+import Std.isOfType as isOfType;
+#else
+import Std.is as isOfType;
+#end
+
 class BitmapWrapper extends #if use_actor_tilemap TileContainer #else Sprite #end implements EngineScaleUpdateListener
 {
 	#if !use_actor_tilemap
@@ -227,7 +233,7 @@ class BitmapWrapper extends #if use_actor_tilemap TileContainer #else Sprite #en
 			if(bitmapFilters == null)
 				bitmapFilters = [];
 			bitmapFilters = bitmapFilters.concat(value);
-			usingSoftwareFilter = Lambda.exists(bitmapFilters, function(f) {return !Std.is(f, ColorMatrixFilter);});
+			usingSoftwareFilter = Lambda.exists(bitmapFilters, function(f) {return !isOfType(f, ColorMatrixFilter);});
 
 			if(!usingSoftwareFilter)
 			{
