@@ -133,6 +133,7 @@ class PostProcess extends DisplayObject
 		var data = new Float32Array(vertices);
 		gl.bufferData(GL.ARRAY_BUFFER, data, GL.STATIC_DRAW);
 		gl.bindBuffer(GL.ARRAY_BUFFER, null);
+		@:privateAccess Engine.stage.context3D.__contextState.__currentGLArrayBuffer = null;
 
 		if(literalText)
 		{
@@ -307,7 +308,8 @@ class PostProcess extends DisplayObject
 			context3D.__flushGLProgram();
 			
 			context3D.__contextState.__currentGLElementArrayBuffer = null;
-			
+			context3D.__contextState.__currentGLArrayBuffer = null;
+
 			//currently unimplemented in openfl
 			//context3D.__contextState.__currentGLTexture2D = null;
 		}

@@ -3588,7 +3588,7 @@ class Actor extends #if use_actor_tilemap TileContainer #else Sprite #end
 			if(currAnimation != null)
 				currAnimation.filter = bitmapFilters;
 		#else
-			usingSoftwareFilter = Lambda.exists(bitmapFilters, function(f) {return !Std.is(f, ColorMatrixFilter);});
+			usingSoftwareFilter = Lambda.exists(bitmapFilters, function(f) {return !isOfType(f, ColorMatrixFilter);});
 
 			if(!usingSoftwareFilter)
 			{
