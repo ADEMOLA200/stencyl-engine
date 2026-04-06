@@ -14,11 +14,7 @@ class EventDispatcher
 	**/
 	macro public static function dispatch<T>(event:ExprOf<Event<T>>, args:Array<Expr>):Expr
 	{
-		//var posInfos = PositionTools.toLocation(Context.currentPos());
-		//var posInfos = Context.getPosInfos(Context.currentPos());
-
-		@:pos(Context.currentPos())
-		return macro
+		return macro @:pos(Context.currentPos())
 		{
 			@:privateAccess
 			if($event.length > 0)
