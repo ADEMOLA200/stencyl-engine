@@ -100,8 +100,14 @@ class BehaviorManager
 		for(i in 0...behaviors.length)
 		{
 			var b:Behavior = behaviors[i];
-			b.initScript(!b.enabled);
-		}	
+			b.initScript();
+		}
+		
+		for(i in 0...behaviors.length)
+		{
+			var b:Behavior = behaviors[i];
+			b.runScript();
+		}
 	}
 	
 	//*-----------------------------------------------

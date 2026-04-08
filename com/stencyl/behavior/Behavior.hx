@@ -75,7 +75,7 @@ class Behavior
 		this.attributes = attributes;
 	}	
 
-	public function initScript(initJustScript:Bool = false)
+	public function initScript()
 	{
 		if(cls == null)
 		{
@@ -107,22 +107,22 @@ class Behavior
 		
 		script.wrapper = this;
 		initAttributes();
-		
-		if(!initJustScript)
+	}
+	
+	public function runScript()
+	{
+		try
 		{
-			try
-			{
-				script.init();
-				script.scriptInit = true;
-			}
-			
-			catch(e: #if (haxe_ver >= 4.1) haxe.Exception #else String #end )
-			{
-				Log.fullError
-				(
-					"Error in when created for behavior: " + name, e
-				);
-			}
+			script.init();
+			script.scriptInit = true;
+		}
+		
+		catch(e: #if (haxe_ver >= 4.1) haxe.Exception #else String #end )
+		{
+			Log.fullError
+			(
+				"Error in when created for behavior: " + name, e
+			);
 		}
 	}
 	
