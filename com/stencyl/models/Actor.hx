@@ -3723,6 +3723,17 @@ class Actor extends #if use_actor_tilemap TileContainer #else Sprite #end
 			}
 		}
 	}
+	
+	public function disableAllBehaviors()
+	{
+		if(behaviors != null)
+		{
+			for(b in behaviors.behaviors)
+			{
+				b.enabled = false;
+			}
+		}
+	}
 		
 	//*-----------------------------------------------
 	//* Messaging

@@ -2364,6 +2364,8 @@ class Engine
 		
 		a.removeAllListeners();
 		a.resetListeners();
+		//this prevents subsequent "when created" events from running
+		a.disableAllBehaviors();
 		
 		removeActorFromLayer(a, a.layer);
 		
