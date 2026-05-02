@@ -9694,7 +9694,7 @@
     </block>
 
     <block tag="set-scalemode"
-           code="Config.scaleMode = #{0};"
+           code="Config.scaleMode = #{0};&#10;engine.reloadScreen();"
            spec="@scene.setscalemode"
            help="@scene.setscalemode.help"
            type="action"
