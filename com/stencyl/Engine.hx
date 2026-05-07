@@ -643,8 +643,27 @@ class Engine
 			}
 			
 			g.resetFont();
-			
+		}
+		if(screensizeUpdated || gameScaleUpdated)
+		{
 			moveCamera(camera.realX, camera.realY);
+		}
+		if(screensizeUpdated)
+		{
+			Utils.applyToAllChildren(root, function(obj) {
+
+				#if !use_tilemap
+				if(isOfType(obj, TileLayer))
+				{
+					cast(obj, TileLayer).expandBitmap();
+				}
+				#end
+				if(isOfType(obj, BackgroundLayer))
+				{
+					cast(obj, BackgroundLayer).updateScreen();
+				}
+
+			});
 		}
 
 		unzoomedScaleX = screenScaleX = root.scaleX;
