@@ -1022,9 +1022,6 @@ class Engine
 			extension.initialize();
 		}
 		
-		//Now, let's start
-		//enter = new FadeInTransition(0.5);
-		//enter.start();
 		sceneToEnter = initSceneID;
 		
 		loadScene(initSceneID);
@@ -2017,23 +2014,28 @@ class Engine
 	
 	public function enterScene()
 	{
+		//Log.debug("Entering Scene " + sceneToEnter);
+
 		if(!enter.isComplete())
 		{
-			enter.start();
-			
-			if(leave != null)
-			{
-				leave.cleanup();
-			}
+			enter.memoOldScene();
 		}
-		
-		leave = null;
-		
-		//Log.debug("Entering Scene " + sceneToEnter);
 		
 		sceneInitialized = false;
 		cleanup();
 		loadScene(sceneToEnter);
+
+		if(!enter.isComplete())
+		{
+			enter.start();
+		}
+		
+		if(leave != null)
+		{
+			leave.cleanup();
+			leave = null;
+		}
+
 		sceneInitialized = true;
 	}
 	
